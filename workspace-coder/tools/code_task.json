@@ -1,0 +1,15 @@
+{
+  "name": "code_task",
+  "description": "调用程序员编写代码或开发工具",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "详细描述程序员需要做什么，包括编程语言、功能需求、输入输出示例等"
+      }
+    },
+    "required": ["query"]
+  },
+  "command": "openclaw agents run coder \"{{query}}\" --response-format text"
+}

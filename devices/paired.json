@@ -1,0 +1,145 @@
+{
+  "8ac07bf0b2019880e379181b705e249ccd2f7556aee2d8c75542bfb603757a5b": {
+    "deviceId": "8ac07bf0b2019880e379181b705e249ccd2f7556aee2d8c75542bfb603757a5b",
+    "publicKey": "d6rznefNCTeIBg4Ts1S5B7Y4Kr0wQ1bTSlhuYVlu0NE",
+    "platform": "linux",
+    "clientId": "gateway-client",
+    "clientMode": "ui",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.read",
+      "operator.admin",
+      "operator.write",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.read",
+      "operator.admin"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "4Dq5x0K9eU3r0RICi5RyHStQFqiwne0D0cWCmz0-L8k",
+        "role": "operator",
+        "scopes": [
+          "operator.admin"
+        ],
+        "createdAtMs": 1772980703397,
+        "rotatedAtMs": 1772980719877
+      }
+    },
+    "createdAtMs": 1772980703397,
+    "approvedAtMs": 1772980719877,
+    "displayName": "openclaw-tui"
+  },
+  "e434997cfe6472d5fb7be5415916cfd068e0bd4340df8c86ccc13ed927f5185d": {
+    "deviceId": "e434997cfe6472d5fb7be5415916cfd068e0bd4340df8c86ccc13ed927f5185d",
+    "publicKey": "CE3sDfNq9y14b8w85t_9oNOdCi-4MNfZpuhfvkpAJY4",
+    "platform": "Linux x86_64",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "KIcqscZLpxja15eiW8Yv1QDWQEeUqdlGrXNRwPV_yIY",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1772981094024,
+        "lastUsedAtMs": 1773017068741
+      }
+    },
+    "createdAtMs": 1772981094023,
+    "approvedAtMs": 1772981094023
+  },
+  "48c6661424f49486ce52153f4a709674b4b447bb09d5304edcbe5a3e604d2721": {
+    "deviceId": "48c6661424f49486ce52153f4a709674b4b447bb09d5304edcbe5a3e604d2721",
+    "publicKey": "Tquv6xO1DYL6JOYbhCcGXkz8XjmtB3cJ3sOhguG1cTM",
+    "platform": "Linux x86_64",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "sY5CIlDFCggwiSO7jF6TVNn3odZnI45QFMlZ2ZdAoyU",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1773018803023
+      }
+    },
+    "createdAtMs": 1773018803022,
+    "approvedAtMs": 1773018803022
+  },
+  "8355d999caf308ed45f3ea34c62b5c4fd7737d8df61a555f59515b28d7307e15": {
+    "deviceId": "8355d999caf308ed45f3ea34c62b5c4fd7737d8df61a555f59515b28d7307e15",
+    "publicKey": "2eYXMehXaV6PgQkj62YdGJ2ynPNqJbEEPN7NpT06aFI",
+    "platform": "Linux x86_64",
+    "clientId": "openclaw-control-ui",
+    "clientMode": "webchat",
+    "role": "operator",
+    "roles": [
+      "operator"
+    ],
+    "scopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "approvedScopes": [
+      "operator.admin",
+      "operator.approvals",
+      "operator.pairing"
+    ],
+    "tokens": {
+      "operator": {
+        "token": "nb-VN3gsg2Ktf8v46tfB0XiX9oBfOnlw6KlRso4yhF4",
+        "role": "operator",
+        "scopes": [
+          "operator.admin",
+          "operator.approvals",
+          "operator.pairing"
+        ],
+        "createdAtMs": 1773019151072,
+        "lastUsedAtMs": 1773023175989
+      }
+    },
+    "createdAtMs": 1773019151071,
+    "approvedAtMs": 1773019151071
+  }
+}

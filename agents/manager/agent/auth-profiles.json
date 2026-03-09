@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "profiles": {
+    "qwen-portal:default": {
+      "type": "oauth",
+      "provider": "qwen-portal",
+      "access": "RtmOy-2_6biVJgKcZe2c4Kw0miGs_QQKvfZ6RuJBbCkngAjmz7Dq00eijahkZAMB7sWISBiN0ahZC9HrdESvIQ",
+      "refresh": "OgPbKbu3sWRfkstNwZRWPoqjSz6hAZ_a8EibBIhXWpNWp7ukgEt6-XOAa9nWGw3cZheVbU4IhVN_fB4JAxH3vQ",
+      "expires": 1772951989219
+    }
+  }
+}

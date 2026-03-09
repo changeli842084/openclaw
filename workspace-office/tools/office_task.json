@@ -1,0 +1,15 @@
+{
+  "name": "office_task",
+  "description": "调用办公专家处理文档、表格、PPT等办公任务",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "详细描述办公专家需要做什么，例如生成报告、分析表格、制作PPT等"
+      }
+    },
+    "required": ["query"]
+  },
+  "command": "openclaw agents run office \"{{query}}\" --response-format text"
+}

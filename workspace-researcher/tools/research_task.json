@@ -1,0 +1,15 @@
+{
+  "name": "research_task",
+  "description": "调用研究员执行网络资料抓取或监控任务",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "搜集信息包括网址、关键词、监控频率、操作浏览器、在论坛发表文章和回复"
+      }
+    },
+    "required": ["query"]
+  },
+  "command": "openclaw agents run researcher \"{{query}}\" --response-format text"
+}

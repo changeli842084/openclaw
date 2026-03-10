@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
-    "sessionId": "bd077de0-44fa-4fac-96b9-276c4a0aab9e",
-    "updatedAt": 1773075137853,
+    "sessionId": "94ccc88b-099c-44bc-93f1-d70b1e8f22d2",
+    "updatedAt": 1773110282093,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -15,13 +15,22 @@
       "surface": "webchat",
       "chatType": "direct"
     },
-    "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/bd077de0-44fa-4fac-96b9-276c4a0aab9e.jsonl",
+    "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/94ccc88b-099c-44bc-93f1-d70b1e8f22d2.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>oracle</name>\n    <description>Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/oracle/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>oracle</name>\n    <description>Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/oracle/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).</description>\n    <location>~/.openclaw/workspace-manager/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>~/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>Agent Browser</name>\n    <description>A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.</description>\n    <location>~/.openclaw/workspace-manager/skills/agent-browser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>find-skills</name>\n    <description>Helps users discover and install agent skills when they ask questions like &quot;how do I do X&quot;, &quot;find a skill for X&quot;, &quot;is there a skill that can...&quot;, or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.</description>\n    <location>~/.openclaw/workspace-manager/skills/find-skills/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>tavily</name>\n    <description>AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.</description>\n    <location>~/.openclaw/workspace-manager/skills/tavily-search/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "clawhub",
+          "requiredEnv": []
+        },
+        {
+          "name": "gh-issues",
+          "primaryEnv": "GH_TOKEN",
+          "requiredEnv": []
+        },
+        {
+          "name": "github",
           "requiredEnv": []
         },
         {
@@ -35,8 +44,20 @@
           "name": "skill-creator"
         },
         {
+          "name": "summarize"
+        },
+        {
           "name": "weather",
           "requiredEnv": []
+        },
+        {
+          "name": "Agent Browser"
+        },
+        {
+          "name": "find-skills"
+        },
+        {
+          "name": "tavily"
         }
       ],
       "resolvedSkills": [
@@ -45,6 +66,22 @@
           "description": "Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.",
           "filePath": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/clawhub/SKILL.md",
           "baseDir": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/clawhub",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "gh-issues",
+          "description": "Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]",
+          "filePath": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/gh-issues/SKILL.md",
+          "baseDir": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/gh-issues",
+          "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "github",
+          "description": "GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.",
+          "filePath": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/github/SKILL.md",
+          "baseDir": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/github",
           "source": "openclaw-bundled",
           "disableModelInvocation": false
         },
@@ -73,11 +110,43 @@
           "disableModelInvocation": false
         },
         {
+          "name": "summarize",
+          "description": "Summarize URLs or files with the summarize CLI (web, PDFs, images, audio, YouTube).",
+          "filePath": "/home/lcc/.openclaw/workspace-manager/skills/summarize/SKILL.md",
+          "baseDir": "/home/lcc/.openclaw/workspace-manager/skills/summarize",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
           "name": "weather",
           "description": "Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.",
           "filePath": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/weather/SKILL.md",
           "baseDir": "/home/lcc/.npm-global/lib/node_modules/openclaw/skills/weather",
           "source": "openclaw-bundled",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "Agent Browser",
+          "description": "A fast Rust-based headless browser automation CLI with Node.js fallback that enables AI agents to navigate, click, type, and snapshot pages via structured commands.",
+          "filePath": "/home/lcc/.openclaw/workspace-manager/skills/agent-browser/SKILL.md",
+          "baseDir": "/home/lcc/.openclaw/workspace-manager/skills/agent-browser",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "find-skills",
+          "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
+          "filePath": "/home/lcc/.openclaw/workspace-manager/skills/find-skills/SKILL.md",
+          "baseDir": "/home/lcc/.openclaw/workspace-manager/skills/find-skills",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "tavily",
+          "description": "AI-optimized web search via Tavily API. Returns concise, relevant results for AI agents.",
+          "filePath": "/home/lcc/.openclaw/workspace-manager/skills/tavily-search/SKILL.md",
+          "baseDir": "/home/lcc/.openclaw/workspace-manager/skills/tavily-search",
+          "source": "openclaw-workspace",
           "disableModelInvocation": false
         }
       ],
@@ -87,8 +156,8 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773074507720,
-      "sessionId": "bd077de0-44fa-4fac-96b9-276c4a0aab9e",
+      "generatedAt": 1773110267172,
+      "sessionId": "94ccc88b-099c-44bc-93f1-d70b1e8f22d2",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
       "model": "kimi-k2.5",
@@ -107,9 +176,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 22634,
+        "chars": 25045,
         "projectContextChars": 11150,
-        "nonProjectContextChars": 11484
+        "nonProjectContextChars": 13895
       },
       "injectedWorkspaceFiles": [
         {
@@ -178,11 +247,19 @@
         }
       ],
       "skills": {
-        "promptChars": 2292,
+        "promptChars": 4703,
         "entries": [
           {
             "name": "clawhub",
             "blockChars": 432
+          },
+          {
+            "name": "gh-issues",
+            "blockChars": 508
+          },
+          {
+            "name": "github",
+            "blockChars": 572
           },
           {
             "name": "healthcheck",
@@ -197,8 +274,24 @@
             "blockChars": 296
           },
           {
+            "name": "summarize",
+            "blockChars": 241
+          },
+          {
             "name": "weather",
             "blockChars": 416
+          },
+          {
+            "name": "Agent Browser",
+            "blockChars": 330
+          },
+          {
+            "name": "find-skills",
+            "blockChars": 495
+          },
+          {
+            "name": "tavily",
+            "blockChars": 247
           }
         ]
       },

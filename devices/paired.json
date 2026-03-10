@@ -3,8 +3,8 @@
     "deviceId": "8ac07bf0b2019880e379181b705e249ccd2f7556aee2d8c75542bfb603757a5b",
     "publicKey": "d6rznefNCTeIBg4Ts1S5B7Y4Kr0wQ1bTSlhuYVlu0NE",
     "platform": "linux",
-    "clientId": "gateway-client",
-    "clientMode": "ui",
+    "clientId": "cli",
+    "clientMode": "probe",
     "role": "operator",
     "roles": [
       "operator"
@@ -32,8 +32,7 @@
       }
     },
     "createdAtMs": 1772980703397,
-    "approvedAtMs": 1772980719877,
-    "displayName": "openclaw-tui"
+    "approvedAtMs": 1772980719877
   },
   "e434997cfe6472d5fb7be5415916cfd068e0bd4340df8c86ccc13ed927f5185d": {
     "deviceId": "e434997cfe6472d5fb7be5415916cfd068e0bd4340df8c86ccc13ed927f5185d",

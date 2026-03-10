@@ -264,6 +264,9 @@
       "nano-banana-pro": {
         "apiKey": "AlzaSyCHmlMT6ZuCR6wx0SByYFwSlsiPi5-0JOw"
       },
+      "baidu-search": {
+        "apiKey": "bce-v3/ALTAK-dg0mMRejmSQe3TenFMZzz/4ed25f9bb2f4e8b7475894bc6e36f3d194effc73"
+      },
       "tavily": {
         "apiKey": "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"
       }

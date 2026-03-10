@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "skills": {
+    "tavily-search": {
+      "version": "1.0.0",
+      "installedAt": 1773123859066
+    },
+    "self-improving-agent": {
+      "version": "3.0.0",
+      "installedAt": 1773124203620
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1773124363986
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1773124464824
+    },
+    "clawddocs": {
+      "version": "1.2.2",
+      "installedAt": 1773124790239
+    },
+    "baidu-search": {
+      "version": "1.1.0",
+      "installedAt": 1773124840018
+    },
+    "multi-search-engine": {
+      "version": "2.0.1",
+      "installedAt": 1773125022737
+    }
+  }
+}

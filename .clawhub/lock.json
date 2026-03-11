@@ -28,6 +28,10 @@
     "multi-search-engine": {
       "version": "2.0.1",
       "installedAt": 1773125022737
+    },
+    "mcporter": {
+      "version": "1.0.0",
+      "installedAt": 1773210860161
     }
   }
 }

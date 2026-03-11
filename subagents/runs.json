@@ -1,97 +1,127 @@
 {
   "version": 2,
   "runs": {
-    "2cf04da1-81a1-4b9c-bd85-6fe90aa4dea5": {
-      "runId": "2cf04da1-81a1-4b9c-bd85-6fe90aa4dea5",
-      "childSessionKey": "agent:manager:subagent:526873f2-074c-432a-b8ab-99b262cf841d",
+    "eb32034c-6997-4886-a65d-b0cee0c47769": {
+      "runId": "eb32034c-6997-4886-a65d-b0cee0c47769",
+      "childSessionKey": "agent:manager:subagent:80d04d17-8364-408f-9771-3ca3189ab0c3",
       "requesterSessionKey": "agent:manager:main",
       "requesterOrigin": {
         "channel": "webchat"
       },
       "requesterDisplayKey": "agent:manager:main",
-      "task": "【测试任务 - Researcher】上海旅行调研\n\n请调研上海3天2晚旅行信息，并保存报告到指定路径。\n\n⚠️ 重要：文件必须保存到以下路径：\n/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/docs/shanghai_research.md\n\n调研内容：\n1. 必去景点（至少5个）\n2. 特色美食（至少5个）\n3. 住宿推荐（至少3家）\n4. 交通指南\n5. 费用预估\n\n要求：\n- 使用搜索工具获取最新信息\n- 数据结构化，使用表格\n- 保存后确认文件存在\n- 报告文件大小\n\n保存路径：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/docs/shanghai_research.md",
+      "task": "【第三轮测试 - Researcher】成都旅行调研\n\n请调研成都3天2晚旅行信息，并保存详细报告。\n\n⚠️ 重要：文件必须保存到：\n/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/docs/chengdu_research.md\n\n调研内容（必须详细）：\n1. 必去景点（至少6个）- 包含门票、开放时间、特色\n2. 特色美食（至少8个）- 包含推荐餐厅、地址、人均消费\n3. 住宿推荐（至少5家）- 包含位置、价格、评分\n4. 交通指南 - 到达方式、市内交通\n5. 费用预估 - 详细预算分解\n6. 推荐行程 - Day1/Day2/Day3 详细安排\n\n要求：\n- 使用搜索工具获取真实数据\n- 使用表格整理信息\n- 数据要具体、实用\n- 保存后确认文件存在\n\n保存路径：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/docs/chengdu_research.md",
       "cleanup": "keep",
       "expectsCompletionMessage": true,
       "spawnMode": "run",
-      "label": "test-researcher",
+      "label": "test3-researcher-chengdu",
       "model": "bailian/kimi-k2.5",
       "runTimeoutSeconds": 300,
-      "createdAt": 1773237113693,
-      "startedAt": 1773237114400,
-      "archiveAtMs": 1773240713693,
+      "createdAt": 1773237888793,
+      "startedAt": 1773237889075,
+      "archiveAtMs": 1773241488793,
       "cleanupHandled": true,
       "retainAttachmentsOnKeep": false,
-      "endedAt": 1773237278751,
+      "endedAt": 1773238083110,
       "outcome": {
         "status": "ok"
       },
       "endedReason": "subagent-complete",
-      "frozenResultText": "任务完成！\n\n## 任务完成报告\n\n**已完成任务**：上海3天2晚旅行调研\n\n**文件保存路径**：`/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/docs/shanghai_research.md`\n\n**文件大小**：8,430 字节（约 8.4 KB）\n\n**报告内容包含**：\n\n1. **必去景点**（8个）：外滩、东方明珠、豫园、南京路、迪士尼、田子坊、新天地、上海博物馆\n2. **特色美食**（8个）：南翔小笼包、生煎包、蟹壳黄、排骨年糕、本帮红烧肉、白斩鸡、葱油拌面、蟹粉小笼\n3. **住宿推荐**（6家）：和平饭店、半岛酒店、香格里拉、全季、亚朵、锦江之星\n4. **交通指南**：抵达交通、市内交通、地铁线路、推荐APP\n5. **费用预估**：经济型/舒适型/豪华型三档预算（1300-18300元）\n\n**数据结构化**：使用了多个表格整理信息，包括景点表、美食表、住宿表、交通表、费用预算表等，便于查阅和对比。",
-      "frozenResultCapturedAt": 1773237278840,
-      "endedHookEmittedAt": 1773237494393,
-      "cleanupCompletedAt": 1773237494394
+      "frozenResultText": "任务完成！我已成功完成成都3天2晚旅行调研，并将详细报告保存到指定路径。\n\n## 任务完成总结\n\n### 已完成内容：\n\n1. **必去景点（8个）**：包含大熊猫基地、武侯祠·锦里、宽窄巷子、杜甫草堂、春熙路-太古里、人民公园、金沙遗址博物馆、东郊记忆，每个景点都包含门票、开放时间、特色、地址和交通信息\n\n2. **特色美食（10家）**：涵盖火锅类（巴蜀大宅门、吼堂老火锅等5家）、串串香类（冒椒火辣、玉林串串香等5家）、小吃快餐类（2家），包含推荐餐厅、地址、人均消费和特色菜品\n\n3. **住宿推荐（6家）**：从豪华型（ISEYA世野、尼依格罗）到经济型（全季、麗枫、不远酒店、天美公寓），包含位置、价格、评分和特色\n\n4. **交通指南**：详细列出到达方式（飞机-天府/双流机场、高铁-成都东站/南站/西站）和市内交通（地铁、公交、出租车）\n\n5. **费用预估**：提供三档预算（经济型800-1200元、舒适型1500-2000元、豪华型2500元以上），详细分解住宿、门票、餐饮、交通等各项费用\n\n6. **推荐行程**：Day1/Day2/Day3 详细时间安排，包含每个时段的景点、餐饮和交通建议\n\n### 文件信息：\n- **保存路径**：`/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/docs/chengdu_research.md`\n- **文件大小**：13,501 字节\n- **行数**：290 行\n- **数据时间**：2026年3月11日实时搜索数据\n\n报告采用Markdown格式，使用表格整理信息，数据具体实用，可直接用于旅行规划。",
+      "frozenResultCapturedAt": 1773238083196,
+      "endedHookEmittedAt": 1773238358749,
+      "cleanupCompletedAt": 1773238358750
     },
-    "cdc587af-ad61-4197-9e93-3a9b8994e6fd": {
-      "runId": "cdc587af-ad61-4197-9e93-3a9b8994e6fd",
-      "childSessionKey": "agent:manager:subagent:b8ecc920-db8e-494f-808b-b047101d9f89",
+    "55633e51-0a66-410f-9aa4-eecc308fcb37": {
+      "runId": "55633e51-0a66-410f-9aa4-eecc308fcb37",
+      "childSessionKey": "agent:manager:subagent:d402bad8-43e4-47f2-9206-74833f607c7e",
       "requesterSessionKey": "agent:manager:main",
       "requesterOrigin": {
         "channel": "webchat"
       },
       "requesterDisplayKey": "agent:manager:main",
-      "task": "【测试任务 - Coder】开发天气查询工具\n\n请开发一个简单的天气查询工具，并保存到指定路径。\n\n⚠️ 重要：文件必须保存到以下路径：\n/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/weather_tool.py\n\n功能要求：\n1. 输入城市名称，返回模拟天气数据\n2. 包含温度、天气状况、建议\n3. 有完整的注释和文档字符串\n4. 包含示例代码\n\n示例：\n```python\npython weather_tool.py 上海\n# 输出：上海：晴天，25°C，适合出行\n```\n\n要求：\n- 代码可运行\n- 有错误处理\n- 保存后确认文件存在\n- 报告文件大小\n\n保存路径：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/weather_tool.py",
+      "task": "【第三轮测试 - Coder】开发汇率转换工具\n\n开发一个汇率转换工具，保存到指定路径。\n\n⚠️ 重要：文件必须保存到：\n/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/currency_converter.py\n\n功能要求：\n1. 输入金额和货币类型，返回转换结果\n2. 支持人民币、美元、欧元、日元、韩元\n3. 使用模拟汇率数据\n4. 有完整注释和错误处理\n5. 包含命令行参数支持\n\n示例：\n```bash\npython currency_converter.py 100 CNY USD\n# 输出：100 CNY = 14.2 USD\n```\n\n保存路径：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/currency_converter.py",
       "cleanup": "keep",
       "expectsCompletionMessage": true,
       "spawnMode": "run",
-      "label": "test-coder",
+      "label": "test3-coder-currency",
       "model": "bailian/kimi-k2.5",
       "runTimeoutSeconds": 300,
-      "createdAt": 1773237114144,
-      "startedAt": 1773237114897,
-      "archiveAtMs": 1773240714144,
+      "createdAt": 1773237901621,
+      "startedAt": 1773237901886,
+      "archiveAtMs": 1773241501621,
       "cleanupHandled": true,
       "retainAttachmentsOnKeep": false,
-      "endedAt": 1773237182273,
+      "endedAt": 1773237991131,
       "outcome": {
         "status": "ok"
       },
       "endedReason": "subagent-complete",
-      "frozenResultText": "任务完成！\n\n## 完成报告\n\n**任务**: 开发天气查询工具\n\n**文件路径**: `/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/weather_tool.py`\n\n**文件大小**: 5659 字节 (约 5.6 KB)\n\n**功能实现**:\n1. ✅ 输入城市名称，返回模拟天气数据\n2. ✅ 包含温度、天气状况、建议\n3. ✅ 有完整的注释和文档字符串\n4. ✅ 包含示例代码\n\n**代码特性**:\n- 支持 20 个中国主要城市的温度范围配置\n- 8 种天气类型（晴天、多云、阴天、小雨、大雨、雷阵雨、雪天、雾霾）\n- 完整的错误处理（空参数、异常捕获）\n- 帮助信息功能 (`--help` / `-h`)\n- 程序内调用示例\n\n**测试结果**:\n- `python3 weather_tool.py 上海` → 正常输出\n- `python3 weather_tool.py 北京` → 正常输出\n- `python3 weather_tool.py --help` → 显示帮助信息\n- `python3 weather_tool.py` (无参数) → 友好错误提示\n\n**文件已确认存在**: ✅",
-      "frozenResultCapturedAt": 1773237182340,
+      "frozenResultText": "任务完成！\n\n## 完成内容\n\n已成功开发汇率转换工具，保存到指定路径：\n**`/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/currency_converter.py`**\n\n### 功能特性\n1. ✅ **输入金额和货币类型，返回转换结果** - 支持命令行参数输入\n2. ✅ **支持5种货币** - CNY(人民币)、USD(美元)、EUR(欧元)、JPY(日元)、KRW(韩元)\n3. ✅ **使用模拟汇率数据** - 以USD为基准的模拟汇率\n4. ✅ **完整注释和错误处理** - 包含详细的类、方法文档字符串，以及输入验证和异常处理\n5. ✅ **命令行参数支持** - 使用argparse实现完整的CLI界面\n\n### 使用示例\n```bash\n# 基础转换\npython3 currency_converter.py 100 CNY USD\n# 输出：100.0 CNY = 14.20 USD\n\n# 显示详细信息\npython3 currency_converter.py -v 1000 USD CNY\n# 输出：包含源货币、目标货币、转换金额等详细信息\n\n# 查看支持的货币列表\npython3 currency_converter.py --list\n```\n\n### 代码结构\n- `CurrencyConverter` 类：核心转换逻辑\n- `EXCHANGE_RATES`：模拟汇率数据（以USD为基准）\n- `validate_currency()`：货币代码验证\n- `validate_amount()`：金额验证\n- `convert()`：汇率转换核心方法\n- `main()`：命令行入口函数",
+      "frozenResultCapturedAt": 1773237991217,
+      "endedHookEmittedAt": 1773238266776,
+      "cleanupCompletedAt": 1773238266777
+    },
+    "8dd9636e-4967-44da-9258-c24e828708c3": {
+      "runId": "8dd9636e-4967-44da-9258-c24e828708c3",
+      "childSessionKey": "agent:manager:subagent:dbc5cbcb-35dc-4275-8210-2d7046264a14",
+      "requesterSessionKey": "agent:manager:main",
+      "requesterOrigin": {
+        "channel": "webchat"
+      },
+      "requesterDisplayKey": "agent:manager:main",
+      "task": "【第三轮测试 - Office】基于调研数据制作成都旅行手册\n\n⚠️ 重要：必须先读取 Researcher 的调研报告！\n\n## 步骤：\n1. 读取文件：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/docs/chengdu_research.md\n2. 提取关键信息（景点、美食、住宿、行程）\n3. 制作精美的成都旅行手册\n\n## 输出要求：\n保存到：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/output/chengdu_travel_guide.md\n\n## 手册内容：\n1. 封面（标题、副标题、日期）\n2. 行程概览（3天行程表）\n3. 每日行程详情（基于调研数据）\n   - Day 1：上午/下午/晚上安排\n   - Day 2：上午/下午/晚上安排\n   - Day 3：上午/下午/晚上安排\n4. 美食推荐（提取调研中的餐厅）\n5. 住宿推荐（提取调研中的酒店）\n6. 费用预算（提取调研中的预算）\n7. 实用信息\n\n## 格式要求：\n- 使用 Markdown\n- 使用表格展示行程\n- 使用 emoji 美化\n- 内容必须基于调研数据，不能编造\n\n## 关键指令：\n1. 先执行：read /home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/docs/chengdu_research.md\n2. 分析提取关键信息\n3. 制作手册并保存\n\n保存路径：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/output/chengdu_travel_guide.md",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "spawnMode": "run",
+      "label": "test3-office-chengdu",
+      "model": "bailian/kimi-k2.5",
+      "runTimeoutSeconds": 300,
+      "createdAt": 1773238252466,
+      "startedAt": 1773238253006,
+      "archiveAtMs": 1773241852466,
+      "cleanupHandled": true,
+      "retainAttachmentsOnKeep": false,
+      "endedAt": 1773238361821,
+      "outcome": {
+        "status": "ok"
+      },
+      "endedReason": "subagent-complete",
+      "frozenResultText": "任务完成！\n\n## ✅ 完成报告\n\n**任务：** 基于调研数据制作成都旅行手册\n\n**已完成：**\n1. ✅ 读取了调研报告 `/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/docs/chengdu_research.md`\n2. ✅ 提取了关键信息（8个景点、10家餐厅、6家酒店、完整行程、费用预算）\n3. ✅ 制作了精美的成都旅行手册\n\n**输出文件：** `/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v3/output/chengdu_travel_guide.md`\n\n**手册内容包括：**\n- 🎨 精美封面（标题、副标题、日期）\n- 📋 行程概览表格（3天行程一目了然）\n- 📅 每日行程详情（上午/下午/晚上安排，含时间、门票、交通、亮点）\n- 🍜 美食推荐（火锅类、串串香类，含地址、人均、必点菜品）\n- 🏨 住宿推荐（6家精选酒店，含价格、评分、特色）\n- 💰 费用预算（经济型/舒适型/豪华型三档预算表）\n- 📌 实用信息（交通、季节、必备物品、预约提醒、紧急联系）\n\n**格式特点：**\n- 使用 Markdown 格式\n- 使用表格展示行程和各类信息\n- 使用 emoji 美化（🐼🏮🍜🏨💰等）\n- 内容完全基于调研数据，无编造内容",
+      "frozenResultCapturedAt": 1773238361903,
       "announceRetryCount": 1,
-      "lastAnnounceRetryAt": 1773237457866,
-      "endedHookEmittedAt": 1773237459386,
-      "cleanupCompletedAt": 1773237459387
+      "lastAnnounceRetryAt": 1773238637448,
+      "endedHookEmittedAt": 1773238638970,
+      "cleanupCompletedAt": 1773238638971
     },
-    "fc793e7a-2c8b-4ebd-8d09-abdfb5971007": {
-      "runId": "fc793e7a-2c8b-4ebd-8d09-abdfb5971007",
-      "childSessionKey": "agent:manager:subagent:bded53ef-13f4-4177-b33d-2c6dba888410",
+    "2c77a3db-ec3c-4efe-849e-500f07cad807": {
+      "runId": "2c77a3db-ec3c-4efe-849e-500f07cad807",
+      "childSessionKey": "agent:manager:subagent:49234461-d376-43aa-aca3-28ad0c4fc08e",
       "requesterSessionKey": "agent:manager:main",
       "requesterOrigin": {
         "channel": "webchat"
       },
       "requesterDisplayKey": "agent:manager:main",
-      "task": "【测试任务 - Office】制作旅行清单\n\n请制作一份上海旅行准备清单，并保存到指定路径。\n\n⚠️ 重要：文件必须保存到以下路径：\n/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/output/shanghai_checklist.md\n\n清单内容：\n1. 证件类\n2. 衣物类\n3. 电子设备\n4. 日用品\n5. 药品类\n6. 其他\n\n格式要求：\n- 使用 Markdown\n- 包含复选框\n- 使用 emoji 美化\n- 分类清晰\n\n示例：\n```markdown\n## 📋 上海旅行清单\n\n### 📄 证件类\n- [ ] 身份证\n- [ ] 护照（如需）\n```\n\n要求：\n- 内容完整实用\n- 保存后确认文件存在\n- 报告文件大小\n\n保存路径：/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/output/shanghai_checklist.md",
+      "task": "搜索北京特色美食推荐，包括：\n1. 北京必吃美食（至少8种）\n2. 推荐餐厅（包含地址、人均消费）\n3. 特色小吃街\n4. 老字号餐厅\n\n请使用网络搜索获取最新信息，整理成清晰的列表。",
       "cleanup": "keep",
       "expectsCompletionMessage": true,
       "spawnMode": "run",
-      "label": "test-office",
+      "label": "beijing-food-search",
       "model": "bailian/kimi-k2.5",
-      "runTimeoutSeconds": 300,
-      "createdAt": 1773237114548,
-      "startedAt": 1773237115042,
-      "archiveAtMs": 1773240714548,
+      "runTimeoutSeconds": 120,
+      "createdAt": 1773240581025,
+      "startedAt": 1773240581575,
+      "archiveAtMs": 1773244181025,
       "cleanupHandled": true,
       "retainAttachmentsOnKeep": false,
-      "endedAt": 1773237150640,
+      "endedAt": 1773240652656,
       "outcome": {
         "status": "ok"
       },
       "endedReason": "subagent-complete",
-      "frozenResultText": "任务完成！\n\n## ✅ 完成报告\n\n**任务**：制作上海旅行准备清单\n\n**文件路径**：`/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant-v2/output/shanghai_checklist.md`\n\n**文件大小**：约 2.5 KB (1105 字节)\n\n**文件状态**：✅ 已确认存在\n\n**清单内容**：\n- 📄 证件类（7项）\n- 👕 衣物类（10项）\n- 📱 电子设备（9项）\n- 🧴 日用品（12项）\n- 💊 药品类（8项）\n- 🎒 其他（9项）\n- ✅ 出发前最后检查（5项）\n\n**格式特点**：\n- 使用 Markdown 格式\n- 所有项目均包含复选框 `- [ ]`\n- 使用 emoji 美化分类标题\n- 包含出行信息填写区和温馨提示\n- 分类清晰，共60+项实用内容",
-      "frozenResultCapturedAt": 1773237150723,
-      "endedHookEmittedAt": 1773237426287,
-      "cleanupCompletedAt": 1773237426288
+      "frozenResultText": "根据搜索结果，我已整理出北京特色美食推荐。以下是完整的北京美食攻略：\n\n---\n\n## 🍜 北京特色美食推荐\n\n### 一、北京必吃美食（10种经典）\n\n| 美食 | 特色描述 | 推荐店铺 |\n|------|---------|---------|\n| **北京烤鸭** | 挂炉/焖炉烤制，皮脆肉嫩，一鸭三吃 | 全聚德、四季民福、便宜坊 |\n| **铜锅涮肉** | 清水炭火本味，手切鲜羊肉配麻酱 | 聚宝源、南门涮肉、满恒记 |\n| **老北京炸酱面** | 面劲道+酱香浓+菜码全 | 方砖厂69号、海碗居 |\n| **豆汁儿** | 老北京\"灵魂饮品\"，绿豆发酵，酸香独特 | 尹三豆汁、护国寺小吃 |\n| **卤煮火烧** | 猪肠猪肺炖煮，配火烧食用 | 小肠陈、北新桥卤煮 |\n| **爆肚** | 羊肚脆嫩，蘸麻酱小料 | 爆肚张、金生隆 |\n| **门钉肉饼** | 形似门钉，皮薄馅大爆汁 | 宝瑞门钉肉饼、祥云轩 |\n| **驴打滚** | 糯米裹豆沙，外粘黄豆面 | 白记年糕、护国寺小吃 |\n| **炒肝** | 猪肠猪肝勾芡，蒜香浓郁 | 天兴居、姚记炒肝 |\n| **艾窝窝/豌豆黄** | 宫廷糕点，软糯清甜 | 护国寺小吃、富华斋饽饽铺 |\n\n---\n\n### 二、推荐餐厅（含地址、人均消费）\n\n#### 🦆 烤鸭类\n| 餐厅 | 地址 | 人均 | 特色 |\n|------|------|------|------|\n| **全聚德(前门店)** | 东城区前门大街14号楼 | ¥212 | 挂炉烤鸭鼻祖，国家级非遗 |\n| **四季民福(故宫店)** | 东城区南池子大街11号 | ¥150-200 | 景观位可赏故宫，需提前取号 |\n| **便宜坊(前门店)** | 东城区前门鲜鱼口街 | ¥150 | 焖炉烤鸭鼻祖，600年历史 |\n\n#### 🍲 涮肉类\n| 餐厅 | 地址 | 人均 | 特色 |\n|------|------|------|------|\n| **聚宝源(牛街创始店)** | 西城区牛街5-2号 | ¥100 | 手切鲜羊肉，金奖麻酱糖饼 |\n| **南门涮肉(后海店)** | 西城区前海东沿14号 | ¥100 | 高钙羊肉带脆骨，什刹海景观 |\n| **满恒记(平安里店)** | 西城区平安里西大街 | ¥100 | 常年排队，炭火铜锅 |\n\n#### 🍜 小吃快餐类\n| 餐厅 | 地址 | 人均 | 特色 |\n|------|------|------|------|\n| **方砖厂69号炸酱面** | 东城区方砖厂胡同 | ¥30 | \"米其林炸酱面\"，需错峰 |\n| **海碗居(增光路店)** | 海淀区增光路 | ¥40 | 有快板表演，剧场式用餐 |\n| **天兴居(鲜鱼口店)** | 东城区前门鲜鱼口街81-83号 | ¥20 | 炒肝配包子，老字号 |\n| **尹三豆汁(天坛店)** | 东城区天坛北门 | ¥15 | 早6-10点营业，豆汁焦圈 |\n\n#### 🏮 老字号鲁菜/京菜\n| 餐厅 | 地址 | 人均 | 特色 |\n|------|------|------|------|\n| **同和居(棕榈泉店)** | 朝阳区棕榈泉生活广场2层 | ¥150 | 非遗鲁菜，三不粘、葱烧海参 |\n| **同春园饭店** | 西城区新街口外大街甲14号 | ¥120 | 淮扬菜老字号，松鼠桂鱼 |\n| **鸿宾楼(展览馆路店)** | 西城区展览馆路11号 | ¥158 | 京城清真第一楼，红烧牛尾 |\n| **砂锅居(西四店)** | 西城区西四南大街60号 | ¥120 | 砂锅白肉，300年历史 |\n\n---\n\n### 三、特色小吃街\n\n| 小吃街 | 地址 | 交通 | 特色亮点 | 必吃推荐 |\n|--------|------|------|---------|---------|\n| **簋街** | 东城区东直门内大街 | 地铁2号线东直门站/5号线北新桥站 | 24小时不打烊的\"夜宵天堂\"，麻辣小龙虾一条街 | 胡大饭馆麻辣小龙虾、南门涮肉、宽板凳老灶火锅 |\n| **牛街** | 西城区牛街 | 地铁4号线菜市口站D口 | 北京最古老回族聚居区，清真美食大本营 | 聚宝源涮肉、洪记包子、白记年糕、宫廷香酥牛肉饼、伊宝荷叶甑糕 |\n| **护国寺小吃街** | 西城区护国寺街 | 地铁6号线平安里站B口 | 800年庙会变来的美食街，宫廷小吃聚集地 | 护国寺小吃总店(驴打滚、豌豆黄、豆汁)、富华斋饽饽铺 |\n| **烟袋斜街** | 西城区地安门外大街 | 地铁8号线什刹海站 | 胡同烟火与现代时尚交融，特色小店扎堆 | 爆肚张、庆云楼、方砖厂69号炸酱面 |\n| **鲜鱼口美食街** | 东城区前门大街中段 | 地铁2号线前门站 | 老字号聚集，京味浓郁 | 天兴居炒肝、都一处烧麦、便宜坊烤鸭 |\n\n---\n\n### 四、百年老字号餐厅\n\n| 老字号 | 创立年份 | 地址 | 招牌菜 | 特色 |\n|--------|---------|------|--------|------|\n| **便宜坊** | 1416年(明永乐) | 东城区前门鲜鱼口街 | 焖炉烤鸭 | 600年历史，烤鸭外酥里嫩 |\n| **柳泉居** | 1567年(明隆庆) | 西城区新街口南大街甲178号 | 炸烹虾段、爆三样、豆沙包 | 融合宫廷、山东、清真三大菜系 |\n| **砂锅居** | 1741年(清乾隆) | 西城区西四南大街60号 | 砂锅白肉 | \"名震京都三百载\" |\n| **都一处** | 1738年(清乾隆) | 东城区前门大街38号 | 烧麦、炸三角 | 乾隆赐名，皮薄馅满 |\n| **白魁老号** | 1780年(清乾隆) | 东城区安定门内大街195号 | 烧羊肉、豆面糕 | 清真老字号，四款中华名小吃 |\n| **全聚德** | 1864年(清同治) | 东城区前门大街14号楼 | 挂炉烤鸭 | \"中华第一吃\"，百国元首光临 |\n| **烤肉宛** | 1686年(清康熙) | 西城区南礼士路58号 | 烤牛肉 | \"南宛北季\"之南宛，烤牛肉\"赛豆腐\" |\n| **烤肉季** | 1848年(清道光) | 西城区前海东沿14号 | 烤羊肉 | \"南宛北季\"之北季，什刹海景观 |\n| **东来顺** | 1903年(清光绪) | 东城区王府井大街138号APM 5层 | 涮羊肉、干爆羊肉 | 涮肉一绝，爆烤炒涮俱全 |\n| **鸿宾楼** | 1853年(清咸丰) | 西城区展览馆路11号 | 红烧牛尾、芫爆散丹 | 京城清真餐饮第一楼 |\n| **丰泽园** | 1930年 | 东城区前门珠市口西大街83号 | 葱烧海参、水晶肘子 | 正宗山东菜，清淡味浓 |\n| **同春园** | 1930年 | 西城区新街口外大街甲14号 | 松鼠桂鱼、精品鳝糊 | \"长安道上八大春\"之首 |\n\n---\n\n### 💡 温馨提示\n\n1. **热门餐厅建议**：四季民福故宫店、聚宝源牛街店、满恒记等常年排队，建议提前取号或错峰就餐\n2. **豆汁儿初尝**：建议选尹三豆汁，点半份(5元)配焦圈(2元)，初次尝试可能不习惯\n3. **稻香村认准\"三禾\"标志**：正宗北京稻香村，推荐枣花酥、绿豆冰糕\n4. **最佳逛吃时间**：小吃街上午9点后开始热闹，簋街夜宵建议晚上8点后前往",
+      "frozenResultCapturedAt": 1773240652768,
+      "endedHookEmittedAt": 1773240696351,
+      "cleanupCompletedAt": 1773240696352
     }
   }
 }

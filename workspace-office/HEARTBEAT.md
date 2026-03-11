@@ -1,5 +1,16 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 后台周期性检查清单
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+（每15分钟执行一次）
 
-# Add tasks below when you want the agent to check something periodically.
+1. **检查办公工具可用性**：
+   - 尝试调用文档生成工具的简单功能（如创建一个空白 Word 文件），确认依赖正常。
+   - 检查图像/视频处理库是否可用。
+
+2. **清理临时文件**：
+   - 检查工作区下的临时文件（如 `*.tmp`、`*.cache`），若超过1小时则清理。
+
+3. **检查是否有待处理的任务**：
+   - 查看 `MEMORY.md` 中记录的任务状态，提醒自己是否有未完成的任务需要继续。
+
+4. **检查输出目录空间**：
+   - 快速估算 `/home/lcc/.openclaw/共享工作档案/office办公文档/` 目录大小，若接近阈值则提醒自己注意存储。

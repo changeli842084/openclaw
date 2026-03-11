@@ -1,40 +1,48 @@
-# TOOLS.md - Local Notes
+# TOOLS.md - 办公专家工具使用笔记
 
-Skills define _how_ tools work. This file is for _your_ specifics — the stuff that's unique to your setup.
+## 文档生成工具
 
-## What Goes Here
+### Word 生成（`docx` skill）
+- **用途**：创建和编辑 Word 文档。
+- **使用技巧**：
+  - 使用模板时，先加载模板文件，再填充内容。
+  - 添加表格时，注意合并单元格和样式。
+  - 图片插入需指定宽度，避免变形。
 
-Things like:
+### Excel 生成（`excel` skill）
+- **用途**：创建 Excel 工作簿，包含数据、透视表和图表。
+- **使用技巧**：
+  - 数据写入后，可自动设置列宽。
+  - 创建透视表需指定行、列、值字段。
+  - 图表类型根据数据特点选择（折线图适合趋势，柱状图适合比较）。
 
-- Camera names and locations
-- SSH hosts and aliases
-- Preferred voices for TTS
-- Speaker/room names
-- Device nicknames
-- Anything environment-specific
+### PPT 生成（`ppt` skill）
+- **用途**：创建演示文稿。
+- **使用技巧**：
+  - 使用模板可保持风格一致。
+  - 每页幻灯片可设置标题和内容占位符。
+  - 图表可嵌入为图片或可编辑的 Excel 对象。
 
-## Examples
+## 多媒体工具
 
-```markdown
-### Cameras
+### 图片生成（`image` skill）
+- **用途**：基于数据生成图表或信息图。
+- **使用技巧**：
+  - 使用 `matplotlib` 时设置中文字体，避免乱码。
+  - 颜色搭配参考用户偏好（蓝色系）。
+  - 保存为高分辨率图片。
 
-- living-room → Main area, 180° wide angle
-- front-door → Entrance, motion-triggered
+### 视频编辑（`video` skill）
+- **用途**：剪辑视频、添加字幕、生成短视频。
+- **使用技巧**：
+  - 视频片段拼接时注意过渡效果。
+  - 字幕文件需与视频时间轴匹配。
+  - 输出分辨率建议 1080p。
 
-### SSH
+## 文件读取
+- 使用 `read_file` 工具读取 Markdown 文件，提取内容。
+- 如果文件包含表格，可解析为 DataFrame 进行分析。
 
-- home-server → 192.168.1.100, user: admin
-
-### TTS
-
-- Preferred voice: "Nova" (warm, slightly British)
-- Default speaker: Kitchen HomePod
-```
-
-## Why Separate?
-
-Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
-
----
-
-Add whatever helps you do your job. This is your cheat sheet.
+## 问题排查
+- 如果工具报错，先检查依赖库是否安装，再检查文件路径权限。
+- 若无法解决，向 manager 报告错误详情。

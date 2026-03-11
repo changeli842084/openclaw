@@ -1,5 +1,19 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 后台周期性检查清单
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+（每20分钟执行一次）
 
-# Add tasks below when you want the agent to check something periodically.
+1. **检查开发环境**：
+   - 确认常用编程语言（Python、Node.js 等）可用。
+   - 检查关键库是否安装（如 `pytest`、`requests`），若缺失则记录并提醒自己。
+
+2. **清理临时文件**：
+   - 删除工作区下的 `*.pyc`、`__pycache__`、`*.log` 等临时文件，保持目录整洁。
+
+3. **检查待办任务**：
+   - 查看 `MEMORY.md` 中记录的任务状态，提醒自己是否有未完成的任务需要继续。
+
+4. **备份提醒**：
+   - 检查最近一次代码保存时间，如果超过1小时未保存，提示自己手动保存或提交版本控制（如果有配置）。
+
+5. **检查输出目录空间**：
+   - 估算 `/home/lcc/.openclaw/共享工作档案/code程序文档/` 目录大小，若接近阈值则提醒。

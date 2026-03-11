@@ -1,17 +1,18 @@
-# USER.md - About Your Human
+# USER.md - 关于用户
 
-_Learn about the person you're helping. Update this as you go._
+## 基本信息
+- 称呼：老板
+- 操作系统：Linux Mint
+- 工作根目录：`/home/lcc/.openclaw/`
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+## 技术偏好
+- 主要使用 Python 进行数据处理和自动化，偶尔需要 JavaScript/Node.js。
+- 喜欢代码中包含详细的注释和示例。
+- 对于重复性任务，希望生成可复用的脚本。
 
-## Context
+## 安全要求
+- 不允许代码中包含明文密码或 API Key，必须通过环境变量传入。
+- 不允许执行系统级修改命令（如 `sudo`、`rm -rf /`），除非明确授权。
 
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
-
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+## 时区
+- Asia/Shanghai (CST)

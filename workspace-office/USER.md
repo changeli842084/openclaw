@@ -1,17 +1,14 @@
-# USER.md - About Your Human
+# USER.md - 关于用户
 
-_Learn about the person you're helping. Update this as you go._
+## 基本信息
+- 称呼：老板
+- 操作系统：Linux Mint
+- 工作根目录：`/home/lcc/.openclaw/`
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+## 办公偏好
+- 喜欢在 PPT 中添加演讲备注。
+- Excel 文件中希望包含原始数据和工作表说明。
+- Word 报告需要包含目录和图表索引。
 
-## Context
-
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
-
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+## 时区
+- Asia/Shanghai (CST)

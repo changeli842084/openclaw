@@ -17,17 +17,52 @@ from typing import Optional, Dict, List, Any
 class BrowserAutomation:
     """浏览器自动化控制器"""
     
-    def __init__(self, config_path: str = "~/.config/mcporter/mcporter.json"):
+    # 默认截图保存目录
+    DEFAULT_SCREENSHOT_DIR = "/home/lcc/.openclaw/共享工作档案/截图"
+    
+    def __init__(self, config_path: str = "~/.config/mcporter/mcporter.json", 
+                 screenshot_dir: str = None):
         """
         初始化浏览器自动化工具
         
         Args:
             config_path: mcporter 配置文件路径
+            screenshot_dir: 截图保存目录，默认为 /home/lcc/.openclaw/共享工作档案/截图
         """
+        import os
         self.config_path = config_path
         self.server_name = "chrome-devtools"
         self.current_url = None
         self.page_elements = {}  # 缓存页面元素
+        
+        # 设置截图目录
+        self.screenshot_dir = screenshot_dir or self.DEFAULT_SCREENSHOT_DIR
+        os.makedirs(self.screenshot_dir, exist_ok=True)
+        
+    def _get_screenshot_path(self, filename: str = None) -> str:
+        """
+        生成截图保存路径
+        
+        Args:
+            filename: 文件名，如果为None则自动生成
+            
+        Returns:
+            完整的截图路径
+        """
+        import os
+        from datetime import datetime
+        
+        if filename is None:
+            # 自动生成文件名: screenshot_YYYYMMDD_HHMMSS.png
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"screenshot_{timestamp}.png"
+        
+        # 如果已经是绝对路径，直接返回
+        if os.path.isabs(filename):
+            return filename
+            
+        # 否则拼接到截图目录
+        return os.path.join(self.screenshot_dir, filename)
     
     def _run_mcporter(self, tool: str, **kwargs) -> Dict[str, Any]:
         """
@@ -309,25 +344,46 @@ class BrowserAutomation:
     
     # ==================== 截图 ====================
     
-    def screenshot(self, file_path: str, full_page: bool = False, 
+    def screenshot(self, filename: str = None, full_page: bool = False, 
                    format: str = "png") -> Dict[str, Any]:
         """
         截取屏幕截图
         
         Args:
-            file_path: 保存路径
+            filename: 文件名或路径，如果为None则自动生成时间戳文件名
+                     如果只提供文件名，会保存到默认截图目录
+                     如果提供绝对路径，则保存到指定位置
             full_page: 是否截取整个页面
             format: 图片格式 (png, jpeg, webp)
             
+        Returns:
+            包含保存路径的结果字典
+            
         Example:
-            >>> browser.screenshot("/tmp/meituan.png", full_page=True)
+            >>> # 自动生成文件名，保存到默认目录
+            >>> browser.screenshot()
+            
+            >>> # 指定文件名，保存到默认目录
+            >>> browser.screenshot("meituan.png", full_page=True)
+            
+            >>> # 指定完整路径
+            >>> browser.screenshot("/tmp/custom.png")
         """
-        return self._run_mcporter(
+        # 生成完整的保存路径
+        save_path = self._get_screenshot_path(filename)
+        
+        result = self._run_mcporter(
             "take_screenshot",
-            filePath=file_path,
+            filePath=save_path,
             fullPage=full_page,
             format=format
         )
+        
+        # 在结果中添加保存路径信息
+        if isinstance(result, dict):
+            result['saved_path'] = save_path
+            
+        return result
     
     # ==================== 网络监控 ====================
     

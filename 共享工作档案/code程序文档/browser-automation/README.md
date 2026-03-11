@@ -106,7 +106,13 @@ result = browser.execute_script("() => document.title")
 
 | 方法 | 说明 | 示例 |
 |------|------|------|
-| `screenshot(path, full_page)` | 截图 | `browser.screenshot("/tmp/img.png", True)` |
+| `screenshot(filename, full_page)` | 截图 | `browser.screenshot("img.png", True)` |
+
+> **截图保存位置**：默认保存到 `/home/lcc/.openclaw/共享工作档案/截图/`
+> 
+> - 如果 `filename` 为 `None`，自动生成时间戳文件名
+> - 如果只提供文件名，保存到默认目录
+> - 如果提供绝对路径（如 `/tmp/img.png`），保存到指定位置
 
 ### 设备模拟
 
@@ -141,7 +147,13 @@ from browser_automation import create_browser
 
 browser = create_browser()
 browser.navigate("https://www.meituan.com")
-browser.screenshot("/tmp/meituan.png", full_page=True)
+
+# 截图会自动保存到默认目录
+result = browser.screenshot("meituan.png", full_page=True)
+print(f"截图已保存到: {result['saved_path']}")
+
+# 或者自动生成文件名
+result = browser.screenshot(full_page=True)  # 生成类似 screenshot_20260311_120000.png
 ```
 
 ### 示例 2: 搜索操作

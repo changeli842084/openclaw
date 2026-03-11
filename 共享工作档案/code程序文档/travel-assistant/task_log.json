@@ -60,13 +60,14 @@
     "agent": "office",
     "description": "制作昆明旅行手册",
     "output_file": "output/昆明旅行手册.md",
-    "full_output_path": "/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant/output/output/昆明旅行手册.md",
+    "full_output_path": "/home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant/output/昆明旅行手册.md",
     "dependencies": [],
-    "status": "failed",
+    "status": "completed",
     "created_at": "2026-03-11T20:50:05.973803",
     "started_at": "2026-03-11T20:50:05.974149",
-    "completed_at": null,
-    "verified_at": null,
-    "error": "输出文件不存在: /home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant/output/output/昆明旅行手册.md"
+    "completed_at": "2026-03-11T20:48:00",
+    "verified_at": "2026-03-11T21:08:00",
+    "error": "输出文件不存在: /home/lcc/.openclaw/共享工作档案/code程序文档/travel-assistant/output/output/昆明旅行手册.md",
+    "file_size": 17387
   }
 }

@@ -1,0 +1,48 @@
+{
+  "base_directory": "/home/lcc/.openclaw/共享工作档案",
+  "project_types": {
+    "code": "code程序文档",
+    "office": "office办公文档",
+    "data": "原始数据文档"
+  },
+  "agents": {
+    "researcher": {
+      "output_dir": "docs",
+      "formats": [
+        ".md",
+        ".txt",
+        ".json",
+        ".csv"
+      ],
+      "description": "调研报告和数据收集"
+    },
+    "coder": {
+      "output_dir": "",
+      "formats": [
+        ".py",
+        ".js",
+        ".sh",
+        ".json"
+      ],
+      "description": "代码和工具开发"
+    },
+    "office": {
+      "output_dir": "output",
+      "formats": [
+        ".docx",
+        ".xlsx",
+        ".pdf",
+        ".md"
+      ],
+      "description": "文档和表格制作"
+    },
+    "manager": {
+      "output_dir": "output",
+      "formats": [
+        ".md",
+        ".json"
+      ],
+      "description": "项目管理和报告"
+    }
+  }
+}

@@ -72,7 +72,7 @@ class TaskManager:
             task_id: 任务ID
             agent: 执行Agent (researcher/coder/office)
             description: 任务描述
-            output_file: 预期输出文件（相对路径）
+            output_file: 预期输出文件（相对路径或文件名）
             dependencies: 依赖的任务ID列表
             
         Returns:
@@ -83,7 +83,13 @@ class TaskManager:
         save_dir = agent_config.get('save_path', self.base_dir)
         
         # 构建完整输出路径
-        full_output_path = os.path.join(save_dir, output_file)
+        # 如果 output_file 已经包含目录前缀，直接使用；否则拼接
+        if output_file.startswith('docs/') or output_file.startswith('output/'):
+            # 去掉前缀，因为 save_dir 已经包含了目标目录
+            relative_file = output_file.split('/', 1)[1] if '/' in output_file else output_file
+            full_output_path = os.path.join(save_dir, relative_file)
+        else:
+            full_output_path = os.path.join(save_dir, output_file)
         
         task = {
             'task_id': task_id,

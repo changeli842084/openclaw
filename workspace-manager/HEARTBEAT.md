@@ -1,5 +1,16 @@
-# HEARTBEAT.md
+# HEARTBEAT.md - 后台周期性检查清单
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+（每2分钟执行一次）
 
-# Add tasks below when you want the agent to check something periodically.
+1. **巡查其他智能体工作状态**：
+   - 检查 researcher、office、coder 的工作区，看是否有新文件生成或文件修改时间变化。
+   - 查看各智能体的 `HEARTBEAT.md` 中是否有主动标记的异常（如“需要帮助”）。
+   - 若发现某个智能体长时间无进展（例如超过10分钟无输出），主动介入询问：“任务进展如何？是否需要协调？”
+
+2. **检查自身待办事项**：
+   - 查看 `MEMORY.md` 中记录的待审核任务，确认是否有超时未审核的情况。
+   - 检查是否有用户新消息需要响应。
+
+3. **系统健康检查**：
+   - 确认 `tavily` 工具可用（若不可用，记录异常并尝试重启技能）。
+   - 确认所有智能体技能依赖基本正常（可通过简单命令测试）。

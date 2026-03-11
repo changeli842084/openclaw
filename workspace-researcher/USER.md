@@ -1,17 +1,14 @@
-# USER.md - About Your Human
+# USER.md - 关于用户
 
-_Learn about the person you're helping. Update this as you go._
+## 基本信息
+- 称呼：老板
+- 操作系统：Linux Mint
+- 工作根目录：`/home/lcc/.openclaw/`
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+## 信息需求偏好
+- 喜欢看到多源信息，但必须去重。
+- 对于特别收集，强调模拟真人访问，避免账号被封。
+- 需要登录时，会通过 manager 提供凭证，请耐心等待。
 
-## Context
-
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
-
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+## 时区
+- Asia/Shanghai (CST)

@@ -1,17 +1,14 @@
-# USER.md - About Your Human
+# USER.md - 关于用户
 
-_Learn about the person you're helping. Update this as you go._
+## 基本信息
+- 称呼：老板
+- 操作系统：Linux Mint
+- 主要工作目录：`/home/lcc/.openclaw/`
 
-- **Name:**
-- **What to call them:**
-- **Pronouns:** _(optional)_
-- **Timezone:**
-- **Notes:**
+## 沟通偏好
+- 希望我（manager）在分配任务时，先简要说明整体计划，再逐步展开。
+- 对于需要你提供的信息（如 API Key、账号密码），我会明确列出所需内容，并解释用途。
+- 紧急事项请通过 Telegram 或直接留言，我会在心跳检查时优先处理。
 
-## Context
-
-_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
-
----
-
-The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.
+## 时区
+- Asia/Shanghai (CST)

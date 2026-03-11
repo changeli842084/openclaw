@@ -1,5 +1,12 @@
-# HEARTBEAT.md
 
-# Keep this file empty (or with only comments) to skip heartbeat API calls.
+# HEARTBEAT.md - 后台周期性检查清单
 
-# Add tasks below when you want the agent to check something periodically.
+（每10分钟执行一次）
+
+1. **检查网络连接**：快速 ping 常用网站（如 google.com），确保网络通畅。若异常，记录日志并尝试重连。
+2. **检查工具可用性**：
+   - 尝试调用 `tavily` 简单查询（如“test”），确认 API 正常。
+   - 检查 `multi-search-engine` 工具是否能返回结果。
+   - 如果 `mcporter` + `chrome-devtools-mcp` 工具组可用，简单检查其状态（如能否启动浏览器）。
+3. **清理临时文件**：检查工作区下是否有未完成的临时文件，若超过1小时，则清理或报告。
+4. **检查是否有待处理的任务**：查看 `MEMORY.md` 中记录的任务状态，提醒自己是否有未完成的任务需要继续。

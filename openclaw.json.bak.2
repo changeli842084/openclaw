@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.7",
-    "lastTouchedAt": "2026-03-09T16:27:03.467Z"
+    "lastTouchedVersion": "2026.3.2",
+    "lastTouchedAt": "2026-03-08T02:59:34.642Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-08T00:56:03.889Z",
@@ -144,17 +144,17 @@
     "list": [
       {
         "id": "manager",
-        "default": true,
         "name": "manager",
+        "default": true,
         "workspace": "/home/lcc/.openclaw/workspace-manager",
         "agentDir": "/home/lcc/.openclaw/agents/manager/agent",
         "model": "bailian/kimi-k2.5",
+        "tools": {
+          "profile": "coding"
+        },
         "identity": {
           "name": "项目经理",
           "emoji": "👔"
-        },
-        "tools": {
-          "profile": "coding"
         }
       },
       {
@@ -194,11 +194,8 @@
   },
   "tools": {
     "profile": "full",
-    "sessions": {
-      "visibility": "all"
-    },
-    "agentToAgent": {
-      "enabled": true
+    "sessions":{
+        "visibility":"all"
     }
   },
   "messages": {
@@ -266,12 +263,6 @@
       },
       "nano-banana-pro": {
         "apiKey": "AlzaSyCHmlMT6ZuCR6wx0SByYFwSlsiPi5-0JOw"
-      },
-      "baidu-search": {
-        "apiKey": "bce-v3/ALTAK-dg0mMRejmSQe3TenFMZzz/4ed25f9bb2f4e8b7475894bc6e36f3d194effc73"
-      },
-      "tavily": {
-        "apiKey": "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"
       }
     }
   },

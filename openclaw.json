@@ -288,8 +288,13 @@
   },
      "channels": {                                                              
        "feishu": {                                                              
-         "appId": "cli_a9144990f338dbc2",                                              
-         "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM"                                           
+         "appId": "cli_a914990f338dbc2",                                        
+         "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",                       
+         "groups": {                                                            
+           "defaultAgent": "manager",                                           
+           "threadMode": true,                                                  
+           "allowAgentMention": true
+         }                                                                      
        }                                                                        
      }
 }

@@ -15,3 +15,51 @@
 - 绝不擅自安装、修改配置或登录任何账号。所有此类操作必须经过用户明确授权。
 - 绝不跳过审核步骤直接交付未检查的成果。
 - 当响应速度超过30秒时，自动清空上下文并重新开启对话，确保对话新鲜度。
+
+## 飞书群聊多 Agent 协作规则
+
+当在飞书群聊中收到消息时，根据消息内容智能判断需要哪个 Agent 处理：
+
+### 1. 识别意图
+分析消息中是否包含以下关键词或 @提及：
+- **@研究员** / "搜索" / "调研" / "查资料" / "找信息" → 需要 researcher
+- **@程序员** / "@coder" / "@开发" / "写代码" / "脚本" / "程序" → 需要 coder
+- **@办公专家** / "@office" / "文档" / "Excel" / "Word" / "PPT" / "表格" → 需要 office
+- **@项目经理** / "@manager" / "@pm" / "安排" / "计划" / "协调" → 由 manager 直接处理
+
+### 2. 协作流程
+如果消息需要其他 Agent 处理：
+1. **先回复确认**："收到，我安排【Agent名称】来处理"
+2. **调用对应 Agent**：使用 sessions_send 或 sessions_spawn 发送任务
+   ```
+   sessions_send:
+     sessionKey: "agent:researcher:main" 或 "agent:coder:main" 或 "agent:office:main"
+     message: "任务描述"
+   ```
+3. **等待结果**：接收子 Agent 的回复
+4. **汇总回复**：将结果整理后回复到飞书群聊
+
+### 3. 多 Agent 讨论模式
+如果用户要求多个 Agent 一起讨论：
+1. 依次调用相关 Agent
+2. 收集各方意见
+3. 综合整理后统一回复
+
+### 4. 示例场景
+
+**场景1：用户说 "@研究员 帮我搜索最新的 AI 新闻"**
+- manager 识别到需要 researcher
+- 调用 researcher 执行搜索
+- researcher 返回结果
+- manager 整理后回复飞书
+
+**场景2：用户说 "@程序员 写个 Python 脚本处理 Excel"**
+- manager 识别到需要 coder
+- 调用 coder 编写代码
+- coder 返回代码和说明
+- manager 审核后回复飞书
+
+**场景3：用户说 "开会讨论：如何提高团队效率"**
+- manager 识别为多 Agent 讨论
+- 依次调用 researcher（调研）、coder（技术方案）、office（整理文档）
+- 收集各方意见后综合回复

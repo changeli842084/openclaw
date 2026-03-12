@@ -1,18 +1,17 @@
 {
   "agent:manager:main": {
     "sessionId": "d597b7d0-9da7-497b-aeb9-fb6a462d2994",
-    "updatedAt": 1773302029999,
+    "updatedAt": 1773305674863,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat",
-      "to": "heartbeat"
+      "channel": "webchat"
     },
     "lastChannel": "webchat",
     "origin": {
-      "label": "heartbeat",
-      "provider": "heartbeat",
+      "label": "openclaw-tui",
+      "provider": "webchat",
       "surface": "webchat",
       "chatType": "direct",
       "from": "heartbeat",
@@ -207,7 +206,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773302022485,
+      "generatedAt": 1773305505734,
       "sessionId": "d597b7d0-9da7-497b-aeb9-fb6a462d2994",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -227,9 +226,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 21045,
-        "projectContextChars": 6183,
-        "nonProjectContextChars": 14862
+        "chars": 22495,
+        "projectContextChars": 7296,
+        "nonProjectContextChars": 15199
       },
       "injectedWorkspaceFiles": [
         {
@@ -244,8 +243,8 @@
           "name": "SOUL.md",
           "path": "/home/lcc/.openclaw/workspace-manager/SOUL.md",
           "missing": false,
-          "rawChars": 440,
-          "injectedChars": 440,
+          "rawChars": 1553,
+          "injectedChars": 1553,
           "truncated": false
         },
         {
@@ -363,8 +362,8 @@
         ]
       },
       "tools": {
-        "listChars": 1386,
-        "schemaChars": 5458,
+        "listChars": 1705,
+        "schemaChars": 6148,
         "entries": [
           {
             "name": "read",
@@ -395,6 +394,12 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2689,
+            "schemaChars": 690,
+            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -450,8 +455,7 @@
     "cacheRead": 6272,
     "cacheWrite": 0,
     "totalTokensFresh": false,
-    "contextTokens": 262144,
-    "lastTo": "heartbeat"
+    "contextTokens": 262144
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

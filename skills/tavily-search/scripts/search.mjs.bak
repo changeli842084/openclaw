@@ -1,37 +1,5 @@
 #!/usr/bin/env node
 
-import { readFileSync } from 'fs';
-import { homedir } from 'os';
-import { join } from 'path';
-
-function getTavilyApiKey() {
-  // 1. 首先检查环境变量
-  const envKey = (process.env.TAVILY_API_KEY ?? "").trim();
-  if (envKey) return envKey;
-
-  // 2. 尝试从 openclaw.json 读取
-  try {
-    const configPaths = [
-      join(homedir(), '.openclaw', 'openclaw.json'),
-      '/home/lcc/.openclaw/openclaw.json',
-    ];
-    
-    for (const configPath of configPaths) {
-      try {
-        const config = JSON.parse(readFileSync(configPath, 'utf8'));
-        const apiKey = config?.skills?.entries?.tavily?.apiKey;
-        if (apiKey) return apiKey.trim();
-      } catch (e) {
-        // 继续尝试下一个路径
-      }
-    }
-  } catch (e) {
-    // 忽略配置读取错误
-  }
-
-  return "";
-}
-
 function usage() {
   console.error(`Usage: search.mjs "query" [-n 5] [--deep] [--topic general|news] [--days 7]`);
   process.exit(2);
@@ -71,7 +39,7 @@ for (let i = 1; i < args.length; i++) {
   usage();
 }
 
-const apiKey = getTavilyApiKey();
+const apiKey = (process.env.TAVILY_API_KEY ?? "").trim();
 if (!apiKey) {
   console.error("Missing TAVILY_API_KEY");
   process.exit(1);

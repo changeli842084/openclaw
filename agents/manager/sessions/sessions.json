@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "d597b7d0-9da7-497b-aeb9-fb6a462d2994",
-    "updatedAt": 1773330998628,
+    "updatedAt": 1773332797493,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -207,7 +207,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773330981546,
+      "generatedAt": 1773332781524,
       "sessionId": "d597b7d0-9da7-497b-aeb9-fb6a462d2994",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -1482,9 +1482,9 @@
   },
   "agent:manager:feishu:group:oc_10e2cf7797df66ebe51e37a918da6062": {
     "sessionId": "c34d0eb7-8341-4cd1-a264-193e7d5be124",
-    "updatedAt": 1773309450163,
+    "updatedAt": 1773331606788,
     "systemSent": true,
-    "abortedLastRun": true,
+    "abortedLastRun": false,
     "displayName": "feishu:g-oc_10e2cf7797df66ebe51e37a918da6062",
     "chatType": "group",
     "channel": "feishu",
@@ -1741,7 +1741,7 @@
     "contextTokens": 262144,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773308850025,
+      "generatedAt": 1773331574961,
       "sessionId": "c34d0eb7-8341-4cd1-a264-193e7d5be124",
       "sessionKey": "agent:manager:feishu:group:oc_10e2cf7797df66ebe51e37a918da6062",
       "provider": "bailian",

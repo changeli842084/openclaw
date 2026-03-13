@@ -1,4 +1,36 @@
 {
   "version": 2,
-  "runs": {}
+  "runs": {
+    "721965bd-b5fa-45b7-aac9-5caf1f06ab12": {
+      "runId": "721965bd-b5fa-45b7-aac9-5caf1f06ab12",
+      "childSessionKey": "agent:manager:subagent:5639e3d5-feff-4184-8ee0-e9a2ef2daf3a",
+      "requesterSessionKey": "agent:manager:feishu:group:oc_10e2cf7797df66ebe51e37a918da6062",
+      "requesterOrigin": {
+        "channel": "webchat"
+      },
+      "requesterDisplayKey": "agent:manager:feishu:group:oc_10e2cf7797df66ebe51e37a918da6062",
+      "task": "使用 feishu_doc 工具创建一个测试文档：\n1. 创建标题为\"测试文档\"的文档\n2. 添加一些示例内容（标题、段落、列表）\n3. 创建一个2行3列的表格并填充示例数据\n\n用户的 open_id 是：ou_516fc2a2b118d27565c34dcb2f3dcfa8\n\n请按以下步骤执行：\n1. 先使用 action: \"create\" 创建文档\n2. 使用 action: \"write\" 添加 markdown 内容（标题、段落、列表）\n3. 使用 action: \"create_table_with_values\" 创建表格\n\n完成后返回文档链接和创建结果。",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "spawnMode": "run",
+      "model": "bailian/kimi-k2.5",
+      "runTimeoutSeconds": 120,
+      "createdAt": 1773379086493,
+      "startedAt": 1773379086695,
+      "archiveAtMs": 1773382686493,
+      "cleanupHandled": true,
+      "retainAttachmentsOnKeep": false,
+      "endedAt": 1773379167207,
+      "outcome": {
+        "status": "timeout"
+      },
+      "endedReason": "subagent-complete",
+      "cleanupCompletedAt": 1773379444445,
+      "endedHookEmittedAt": 1773379162444,
+      "frozenResultText": "[plugins] feishu_doc: Registered feishu_doc, feishu_app_scopes\n[plugins] feishu_chat: Registered feishu_chat tool\n[plugins] feishu_wiki: Registered feishu_wiki tool\n[plugins] feishu_drive: Registered feishu_drive tool\n[plugins] feishu_bitable: Registered bitable tools\nerror: unknown option '--tools'\n\nCommand aborted by signal SIGKILL",
+      "frozenResultCapturedAt": 1773379167350,
+      "announceRetryCount": 1,
+      "lastAnnounceRetryAt": 1773379442917
+    }
+  }
 }

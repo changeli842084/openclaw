@@ -32,6 +32,18 @@
     "mcporter": {
       "version": "1.0.0",
       "installedAt": 1773210860161
+    },
+    "ontology": {
+      "version": "1.0.4",
+      "installedAt": 1773501311153
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1773501475448
+    },
+    "skill-vetter": {
+      "version": "1.0.0",
+      "installedAt": 1773501640664
     }
   }
 }

@@ -1,18 +1,21 @@
 {
   "agent:manager:main": {
     "sessionId": "824cbd13-dfcf-4c9b-9e0a-bdd931503d71",
-    "updatedAt": 1773500259843,
+    "updatedAt": 1773503869961,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
+      "channel": "webchat",
       "to": "heartbeat"
     },
     "origin": {
       "label": "heartbeat",
       "provider": "heartbeat",
       "from": "heartbeat",
-      "to": "heartbeat"
+      "to": "heartbeat",
+      "surface": "webchat",
+      "chatType": "direct"
     },
     "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/824cbd13-dfcf-4c9b-9e0a-bdd931503d71.jsonl",
     "compactionCount": 0,
@@ -247,7 +250,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773500250096,
+      "generatedAt": 1773503850135,
       "sessionId": "824cbd13-dfcf-4c9b-9e0a-bdd931503d71",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -506,8 +509,9 @@
     "cacheRead": 6272,
     "cacheWrite": 0,
     "totalTokensFresh": false,
-    "lastTo": "heartbeat",
-    "contextTokens": 262144
+    "contextTokens": 262144,
+    "lastChannel": "webchat",
+    "lastTo": "heartbeat"
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

@@ -4,6 +4,10 @@
     "tavily-search": {
       "version": "1.0.0",
       "installedAt": 1773123785024
+    },
+    "humanizer": {
+      "version": "1.0.0",
+      "installedAt": 1773509921182
     }
   }
 }

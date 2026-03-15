@@ -35,3 +35,14 @@
 - 专属技能放在自己的 `workspace/skills/` 目录下，其他Agent无法访问
 - 公共技能统一放在 `~/.openclaw/skills/`，只安装一次，所有Agent共享
 - 同名技能优先使用自己 workspace 中的版本
+
+## 任务分配规则（重要）
+
+### 有任务时：manager 只巡查，不执行
+- manager 只负责监控和协调
+- 执行任务分配给：office（优先）→ researcher（备选）→ coder
+- 谁有空谁执行，避免任务冲突
+
+### 无任务时：manager 可执行简单任务
+- 整理文档、汇总信息等轻量级任务
+- 复杂任务仍分配给专业 Agent

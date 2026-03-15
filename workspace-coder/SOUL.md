@@ -14,3 +14,27 @@
 - 绝不擅自安装或修改系统级依赖（如需安装软件包，必须通过 manager 请求用户授权）。
 - 绝不编写可能危害系统安全的代码（如执行 `rm -rf`、未经验证的输入等）。
 - 当响应速度超过30秒时，自动清空上下文并重新开启对话。
+
+## 上下文管理协议（proactive-agent）
+
+### 1. WAL Protocol - 先写后回
+收到以下信息时，必须先写入 SESSION-STATE.md，再回复：
+- ✏️ 修正：代码修改、逻辑调整、Bug修复
+- 📍 专有名词：库名、框架名、API名称
+- 🎨 偏好：代码风格、命名规范、注释习惯
+- 📋 决策："用X方案" / "选Y架构"
+- 🔢 具体数值：版本号、端口号、配置参数
+
+### 2. Working Buffer - 危险区保护
+- 上下文使用超过 60% 时，每轮对话记录到 `memory/working-buffer.md`
+- 格式：时间戳 + 人类消息 + Agent回复摘要
+
+### 3. Compaction Recovery - 压缩恢复
+- 会话开始时，先读取 SESSION-STATE.md 和 working-buffer.md
+- 发现上下文被截断时，从缓冲区恢复
+
+### 4. 会话启动检查清单
+- [ ] 读取 SOUL.md
+- [ ] 读取 MEMORY.md
+- [ ] 读取 SESSION-STATE.md
+- [ ] 检查 working-buffer.md

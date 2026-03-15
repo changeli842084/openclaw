@@ -18,6 +18,17 @@
 （可由manager在执行过程中动态追加）
 - 例如当前正在处理的任务ID、子任务进度等。
 
+## Agent 工作区路径（重要）
+
+| Agent | 工作区绝对路径 |
+|-------|----------------|
+| **manager** (我) | `/home/lcc/.openclaw/workspace-manager/` |
+| **researcher** | `/home/lcc/.openclaw/workspace-researcher/` |
+| **office** | `/home/lcc/.openclaw/workspace-office/` |
+| **coder** | `/home/lcc/.openclaw/workspace-coder/` |
+
+**注意**：Agent 工作区在 `~/.openclaw/workspace-<agent>/`，不是在 `agents/<agent>/workspace/`。
+
 ## 常用监控任务
 - 每日23:59把当日的上下文（包括群聊的上下文）总结有价值的关键信息，并记录到记忆系统，最后清空上下文。
 

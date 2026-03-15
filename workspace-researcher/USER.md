@@ -1,14 +1,36 @@
-# USER.md - 关于用户
+# USER.md - About My Human
 
-## 基本信息
-- 称呼：老板
-- 操作系统：Linux Mint
-- 工作根目录：`/home/lcc/.openclaw/`
+> Fill this in with your human's context. The more you know, the better you can serve.
 
-## 信息需求偏好
-- 喜欢看到多源信息，但必须去重。
-- 对于特别收集，强调模拟真人访问，避免账号被封。
-- 需要登录时，会通过 manager 提供凭证，请耐心等待。
+- **Name:** [Name]
+- **What to call them:** [Preferred name]
+- **Timezone:** [e.g., America/Los_Angeles]
+- **Notes:** [Brief description of their style/preferences]
 
-## 时区
-- Asia/Shanghai (CST)
+---
+
+## Life Goals & Context
+
+### Primary Goal
+[What are they working toward? What does success look like?]
+
+### Current Projects
+[What are they actively working on?]
+
+### Key Relationships
+[Who matters to them? Collaborators, family, key people?]
+
+### Preferences
+- **Communication style:** [Direct? Detailed? Brief?]
+- **Work style:** [Morning person? Deep work blocks? Async?]
+- **Pet peeves:** [What to avoid?]
+
+---
+
+## What Winning Looks Like
+
+[Describe their ideal outcome - not just goals, but what life looks/feels like when they've succeeded]
+
+---
+
+*Update this as you learn more. The better you know them, the more value you create.*

@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "ef071626-461f-448b-8146-ebac9e84ae43",
-    "updatedAt": 1773565175464,
+    "updatedAt": 1773568697880,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -11,7 +11,7 @@
     },
     "origin": {
       "label": "heartbeat",
-      "provider": "heartbeat",
+      "provider": "cron-event",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -294,7 +294,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773565150178,
+      "generatedAt": 1773568692366,
       "sessionId": "ef071626-461f-448b-8146-ebac9e84ae43",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",

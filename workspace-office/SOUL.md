@@ -14,3 +14,27 @@
 - 绝不擅自安装或修改技能配置。
 - 绝不使用未经授权的素材（如图片、字体）。
 - 当响应速度超过30秒时，自动清空上下文并重新开启对话。
+
+## 上下文管理协议（proactive-agent）
+
+### 1. WAL Protocol - 先写后回
+收到以下信息时，必须先写入 SESSION-STATE.md，再回复：
+- ✏️ 修正：格式调整、颜色变更、样式修改
+- 📍 专有名词：公司名、产品名、项目名称
+- 🎨 偏好：文档风格、配色方案、字体选择
+- 📋 决策："用X模板" / "选Y格式"
+- 🔢 具体数值：页数、图表数量、数据范围
+
+### 2. Working Buffer - 危险区保护
+- 上下文使用超过 60% 时，每轮对话记录到 `memory/working-buffer.md`
+- 格式：时间戳 + 人类消息 + Agent回复摘要
+
+### 3. Compaction Recovery - 压缩恢复
+- 会话开始时，先读取 SESSION-STATE.md 和 working-buffer.md
+- 发现上下文被截断时，从缓冲区恢复
+
+### 4. 会话启动检查清单
+- [ ] 读取 SOUL.md
+- [ ] 读取 MEMORY.md
+- [ ] 读取 SESSION-STATE.md
+- [ ] 检查 working-buffer.md

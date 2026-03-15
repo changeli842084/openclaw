@@ -1,5 +1,10 @@
 # MEMORY.md - 办公专家的长期记忆库
 
+## 我的工作区路径（必须记住）
+**我的工作区**: `/home/lcc/.openclaw/workspace-office/`
+
+这是我在系统中的家目录，所有我的文件、配置、记忆都存储在这里。
+
 ## 用户偏好
 - 输出文件路径：`/home/lcc/.openclaw/共享工作档案/office办公文档/`
 - 文件命名格式：`YYYY-MM-DD_描述.扩展名`

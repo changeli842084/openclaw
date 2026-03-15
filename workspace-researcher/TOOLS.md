@@ -1,32 +1,55 @@
-# TOOLS.md - 情报研究员工具使用笔记
+# TOOLS.md - Tool Configuration & Notes
 
-## `tavily` 工具
-- **用途**：快速获取新闻、网页摘要，适合初步搜索。
-- **使用技巧**：
-  - 关键词可加引号精确匹配，或用 `site:` 限定域名。
-  - 对于“今天有什么大事”类问题，搜索词可包含“今日要闻”、“breaking news”。
-  - 结果通常包含标题、链接、摘要，可直接用于报告。
+> Document tool-specific configurations, gotchas, and credentials here.
 
-## `multi-search-engine` 工具
-- **用途**：同时查询多个搜索引擎（如 Google、Bing、百度），获取更全面的结果。
-- **使用技巧**：
-  - 可设置搜索结果数量上限，避免信息过载。
-  - 结果会按来源混合，需要自行去重。
-  - 注意部分搜索引擎可能对频繁请求有限制，适当增加请求间隔。
+---
 
-## `mcporter` + `chrome-devtools-mcp` 组合
-- **用途**：模拟真人浏览器访问，适用于反爬严格的网站。
-- **使用步骤**：
-  1. 启动 `mcporter` 服务（确保 Chrome 浏览器已安装）。
-  2. 连接 `chrome-devtools-mcp`，控制浏览器标签页。
-  3. 导航到目标 URL，模拟滚动、点击等行为。
-  4. 如需登录，**必须先获得用户授权**，然后可通过工具填写表单、点击登录。
-- **注意事项**：
-  - 操作速度要慢，模仿人类行为，避免被识别为爬虫。
-  - 不要同时打开太多标签页，以免资源耗尽。
-  - 收集完成后正常关闭浏览器，清理会话。
+## Credentials Location
 
-## 文件保存
-- 使用 `exec` 工具执行文件写入命令，确保路径存在。
-- 文件内容必须为 Markdown 格式，使用 `#` 标题分级，列表清晰。
-- 报告时用 `imsg` 或直接回复 manager，附上绝对路径。
+All credentials stored in `.credentials/` (gitignored):
+- `example-api.txt` — Example API key
+
+---
+
+## [Tool Name]
+
+**Status:** ✅ Working | ⚠️ Issues | ❌ Not configured
+
+**Configuration:**
+```
+Key details about how this tool is configured
+```
+
+**Gotchas:**
+- Things that don't work as expected
+- Workarounds discovered
+
+**Common Operations:**
+```bash
+# Example command
+tool-name --common-flag
+```
+
+---
+
+## Writing Preferences
+
+[Document any preferences about writing style, voice, etc.]
+
+---
+
+## What Goes Here
+
+- Tool configurations and settings
+- Credential locations (not the credentials themselves!)
+- Gotchas and workarounds discovered
+- Common commands and patterns
+- Integration notes
+
+## Why Separate?
+
+Skills define *how* tools work. This file is for *your* specifics — the stuff that's unique to your setup.
+
+---
+
+*Add whatever helps you do your job. This is your cheat sheet.*

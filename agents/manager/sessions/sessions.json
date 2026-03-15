@@ -1,16 +1,17 @@
 {
   "agent:manager:main": {
     "sessionId": "ef071626-461f-448b-8146-ebac9e84ae43",
-    "updatedAt": 1773554361260,
+    "updatedAt": 1773557962572,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "origin": {
       "label": "heartbeat",
-      "provider": "webchat",
+      "provider": "cron-event",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -293,7 +294,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773553818183,
+      "generatedAt": 1773557758990,
       "sessionId": "ef071626-461f-448b-8146-ebac9e84ae43",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -313,9 +314,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 25777,
+        "chars": 26349,
         "projectContextChars": 7296,
-        "nonProjectContextChars": 18481
+        "nonProjectContextChars": 19053
       },
       "injectedWorkspaceFiles": [
         {
@@ -481,8 +482,8 @@
         ]
       },
       "tools": {
-        "listChars": 1602,
-        "schemaChars": 7233,
+        "listChars": 1921,
+        "schemaChars": 7923,
         "entries": [
           {
             "name": "read",
@@ -513,6 +514,12 @@
             "summaryChars": 85,
             "schemaChars": 961,
             "propertiesCount": 12
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2689,
+            "schemaChars": 690,
+            "propertiesCount": 13
           },
           {
             "name": "sessions_list",
@@ -588,7 +595,8 @@
     "totalTokensFresh": false,
     "contextTokens": 262144,
     "lastChannel": "webchat",
-    "channel": "webchat"
+    "channel": "webchat",
+    "lastTo": "heartbeat"
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

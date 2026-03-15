@@ -1,18 +1,20 @@
 {
   "agent:manager:main": {
     "sessionId": "ef071626-461f-448b-8146-ebac9e84ae43",
-    "updatedAt": 1773549137590,
+    "updatedAt": 1773554361260,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "to": "heartbeat"
+      "channel": "webchat"
     },
     "origin": {
       "label": "heartbeat",
-      "provider": "heartbeat",
+      "provider": "webchat",
       "from": "heartbeat",
-      "to": "heartbeat"
+      "to": "heartbeat",
+      "surface": "webchat",
+      "chatType": "direct"
     },
     "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/ef071626-461f-448b-8146-ebac9e84ae43.jsonl",
     "compactionCount": 0,
@@ -291,7 +293,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773549135535,
+      "generatedAt": 1773553818183,
       "sessionId": "ef071626-461f-448b-8146-ebac9e84ae43",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -311,9 +313,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 25259,
+        "chars": 25777,
         "projectContextChars": 7296,
-        "nonProjectContextChars": 17963
+        "nonProjectContextChars": 18481
       },
       "injectedWorkspaceFiles": [
         {
@@ -479,8 +481,8 @@
         ]
       },
       "tools": {
-        "listChars": 1386,
-        "schemaChars": 5458,
+        "listChars": 1602,
+        "schemaChars": 7233,
         "entries": [
           {
             "name": "read",
@@ -531,10 +533,16 @@
             "propertiesCount": 5
           },
           {
+            "name": "sessions_yield",
+            "summaryChars": 97,
+            "schemaChars": 60,
+            "propertiesCount": 1
+          },
+          {
             "name": "sessions_spawn",
             "summaryChars": 198,
-            "schemaChars": 922,
-            "propertiesCount": 16
+            "schemaChars": 1179,
+            "propertiesCount": 17
           },
           {
             "name": "subagents",
@@ -547,6 +555,18 @@
             "summaryChars": 207,
             "schemaChars": 89,
             "propertiesCount": 2
+          },
+          {
+            "name": "web_search",
+            "summaryChars": 175,
+            "schemaChars": 1084,
+            "propertiesCount": 9
+          },
+          {
+            "name": "web_fetch",
+            "summaryChars": 129,
+            "schemaChars": 374,
+            "propertiesCount": 3
           },
           {
             "name": "memory_search",
@@ -566,8 +586,9 @@
     "cacheRead": 6272,
     "cacheWrite": 0,
     "totalTokensFresh": false,
-    "lastTo": "heartbeat",
-    "contextTokens": 262144
+    "contextTokens": 262144,
+    "lastChannel": "webchat",
+    "channel": "webchat"
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

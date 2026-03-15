@@ -17,4 +17,19 @@
 
 ## 工具配置状态
 - `python-docx`、`openpyxl`、`python-pptx`、`pandas`、`matplotlib`、`moviepy` 等库已安装。
-- 字体文件：确保中文字体（如“微软雅黑”）可用。
+- 字体文件：确保中文字体（如"微软雅黑"）可用。
+
+## 技能目录规则（重要）
+根据 OpenClaw 官方设计，技能加载优先级如下：
+1. **`<workspace>/skills` (最高优先级)** - 本 Agent 专属技能目录
+2. **`~/.openclaw/skills` (中等优先级)** - 公共共享技能（所有Agent共用）
+3. **Bundled skills (最低优先级)** - 系统自带技能
+
+### 本 Agent 技能路径
+- **专属技能**: `~/.openclaw/workspace-office/skills/` - 仅 office 可用
+- **公共技能**: `~/.openclaw/skills/` - 所有Agent共享
+
+### 规则说明
+- 专属技能放在自己的 `workspace/skills/` 目录下，其他Agent无法访问
+- 公共技能统一放在 `~/.openclaw/skills/`，只安装一次，所有Agent共享
+- 同名技能优先使用自己 workspace 中的版本

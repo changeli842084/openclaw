@@ -157,7 +157,7 @@
           "emoji": "👔"
         },
         "tools": {
-          "profile": "coding"
+          "profile": "full"
         }
       },
       {
@@ -169,6 +169,9 @@
         "identity": {
           "name": "研究员",
           "emoji": "🔍"
+        },
+        "tools": {
+          "profile": "full"
         }
       },
       {
@@ -180,6 +183,9 @@
         "identity": {
           "name": "办公专家",
           "emoji": "📊"
+        },
+        "tools": {
+          "profile": "full"
         }
       },
       {
@@ -191,6 +197,9 @@
         "identity": {
           "name": "程序员",
           "emoji": "💻"
+        },
+        "tools": {
+          "profile": "full"
         }
       }
     ]
@@ -286,17 +295,24 @@
       "feishu": {"enabled": true}
     }
   },
-     "channels": {                                                              
-       "feishu": {                                                              
-         "appId": "cli_a9144990f338dbc2",                                        
+     "channels": {
+       "feishu": {
+         "appId": "cli_a9144990f338dbc2",
          "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
-         "requireMention":true,
-         "groupPolicy": "open",                     
-         "groups": {                                                            
-           "defaultAgent": "manager",                                           
-           "threadMode": true,                                                  
+         "requireMention": true,
+         "groupPolicy": "open",
+         "tools": {
+           "doc": true,
+           "drive": true,
+           "wiki": true,
+           "perm": false,
+           "bitable": true
+         },
+         "groups": {
+           "defaultAgent": "manager",
+           "threadMode": true,
            "allowAgentMention": true
-         }                                                                      
-       }                                                                        
+         }
+       }
      }
 }

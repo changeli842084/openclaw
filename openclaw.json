@@ -250,12 +250,18 @@
       "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
       "requireMention": true,
       "groupPolicy": "open",
+      "streaming": true,
       "tools": {
         "doc": true,
         "drive": true,
         "wiki": true,
         "perm": true,
         "bitable": true
+        
+      },
+      "footer":{
+         "elapsed": true,
+         "status": true
       },
       "groups": {
         "defaultAgent": "manager",

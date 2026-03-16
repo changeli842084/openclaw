@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "91287921-88c8-484f-b86c-abb6d831c9aa",
-    "updatedAt": 1773633528478,
+    "updatedAt": 1773637118556,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -305,7 +305,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773633496679,
+      "generatedAt": 1773637104882,
       "sessionId": "91287921-88c8-484f-b86c-abb6d831c9aa",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",

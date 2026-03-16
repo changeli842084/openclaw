@@ -1,0 +1,12 @@
+2026/03/16-23:51:17.977 12bb Reusing MANIFEST /home/lcc/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_bytedance.larkoffice.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/16-23:51:17.978 12bb Recovering log #4
+2026/03/16-23:51:17.981 12bb Reusing old log /home/lcc/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_bytedance.larkoffice.com_0.indexeddb.leveldb/000004.log 
+2026/03/16-23:54:30.910 12bc Level-0 table #8: started
+2026/03/16-23:54:31.042 12bc Level-0 table #8: 2022245 bytes OK
+2026/03/16-23:54:31.160 12bc Delete type=0 #4
+2026/03/16-23:55:27.643 12bb Compacting 1@1 + 1@2 files
+2026/03/16-23:55:27.735 12bb Generated table #9@1: 1594 keys, 290292 bytes
+2026/03/16-23:55:27.735 12bb Compacted 1@1 + 1@2 files => 290292 bytes
+2026/03/16-23:55:27.775 12bb compacted to: files[ 0 0 1 0 0 0 0 ]
+2026/03/16-23:55:27.776 12bb Delete type=2 #8
+2026/03/16-23:55:27.776 12bb Delete type=2 #5

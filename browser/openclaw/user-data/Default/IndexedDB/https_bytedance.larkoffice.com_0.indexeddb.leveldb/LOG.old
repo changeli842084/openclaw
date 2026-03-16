@@ -1,0 +1,5 @@
+2026/03/16-23:19:07.039 1508f Creating DB /home/lcc/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_bytedance.larkoffice.com_0.indexeddb.leveldb since it was missing.
+2026/03/16-23:19:07.156 1508f Reusing MANIFEST /home/lcc/.openclaw/browser/openclaw/user-data/Default/IndexedDB/https_bytedance.larkoffice.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/03/16-23:21:48.344 15090 Level-0 table #5: started
+2026/03/16-23:21:48.439 15090 Level-0 table #5: 1690140 bytes OK
+2026/03/16-23:21:48.484 15090 Delete type=0 #3

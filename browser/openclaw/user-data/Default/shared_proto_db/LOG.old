@@ -1,2 +1,3 @@
-2026/03/10-20:58:51.634 d56c Creating DB /home/lcc/.openclaw/browser/openclaw/user-data/Default/shared_proto_db since it was missing.
-2026/03/10-20:58:52.117 d56c Reusing MANIFEST /home/lcc/.openclaw/browser/openclaw/user-data/Default/shared_proto_db/MANIFEST-000001
+2026/03/16-23:18:57.856 1509a Reusing MANIFEST /home/lcc/.openclaw/browser/openclaw/user-data/Default/shared_proto_db/MANIFEST-000001
+2026/03/16-23:18:57.856 1509a Recovering log #3
+2026/03/16-23:18:57.858 1509a Reusing old log /home/lcc/.openclaw/browser/openclaw/user-data/Default/shared_proto_db/000003.log 

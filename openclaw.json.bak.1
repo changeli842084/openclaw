@@ -1,12 +1,12 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.7",
-    "lastTouchedAt": "2026-03-12T00:30:05.467Z"
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-16T03:57:11.819Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-08T00:56:03.889Z",
-    "lastRunVersion": "2026.3.2",
-    "lastRunCommand": "onboard",
+    "lastRunAt": "2026-03-12T00:44:02.269Z",
+    "lastRunVersion": "2026.3.7",
+    "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
   "auth": {
@@ -157,7 +157,7 @@
           "emoji": "👔"
         },
         "tools": {
-          "profile": "coding"
+          "profile": "full"
         }
       },
       {
@@ -169,6 +169,9 @@
         "identity": {
           "name": "研究员",
           "emoji": "🔍"
+        },
+        "tools": {
+          "profile": "full"
         }
       },
       {
@@ -180,6 +183,9 @@
         "identity": {
           "name": "办公专家",
           "emoji": "📊"
+        },
+        "tools": {
+          "profile": "full"
         }
       },
       {
@@ -191,6 +197,9 @@
         "identity": {
           "name": "程序员",
           "emoji": "💻"
+        },
+        "tools": {
+          "profile": "full"
         }
       }
     ]
@@ -232,6 +241,32 @@
         "session-memory": {
           "enabled": true
         }
+      }
+    }
+  },
+  "channels": {
+    "feishu": {
+      "appId": "cli_a9144990f338dbc2",
+      "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
+      "requireMention": true,
+      "groupPolicy": "open",
+      "streaming": false,
+      "tools": {
+        "doc": true,
+        "drive": true,
+        "wiki": true,
+        "perm": true,
+        "bitable": true
+        
+      },
+      "footer":{
+         "elapsed": true,
+         "status": true
+      },
+      "groups": {
+        "defaultAgent": "manager",
+        "threadMode": true,
+        "allowAgentMention": true
       }
     }
   },
@@ -283,12 +318,9 @@
       "qwen-portal-auth": {
         "enabled": true
       },
-       "feishu": {                                                              
-         "appId": "cli_a9144990f338dbc2",                                       
-         "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",                      
-         "encryptKey": "",                                        
-         "verificationToken": ""                                  
-       }
+      "feishu": {
+        "enabled": true
+      }
     }
   }
 }

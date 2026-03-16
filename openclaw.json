@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-16T15:55:40.664Z"
+    "lastTouchedAt": "2026-03-16T16:06:32.767Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-12T00:44:02.269Z",
@@ -142,6 +142,9 @@
       },
       "compaction": {
         "mode": "safeguard"
+      },
+      "memorySearch": {
+        "enabled": false
       }
     },
     "list": [
@@ -244,7 +247,33 @@
       }
     }
   },
-  "channels": {},
+  "channels": {
+    "feishu": {
+      "appId": "cli_a9144990f338dbc2",
+      "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
+      "requireMention": true,
+      "groupPolicy": "allowlist",
+      "streaming": false,
+      "tools": {
+        "doc": true,
+        "drive": true,
+        "wiki": true,
+        "perm": true,
+        "bitable": true
+      },
+      "footer": {
+        "elapsed": true,
+        "status": true
+      },
+      "groupAllowFrom": ["ou_516fc2a2b118d27565c34dcb2f3dcfa8"],
+      "groups": {
+        "defaultAgent": "manager",
+        "threadMode": true,
+        "allowAgentMention": true,
+        "allow": ["oc_10e2cf7797df66ebe51e37a918da6062", "oc_a3fc81eeb51c4e830f4422f2888b852b"]
+      }
+    }
+  },
   "gateway": {
     "port": 18883,
     "mode": "local",
@@ -289,30 +318,13 @@
     }
   },
   "plugins": {
+    "allow": ["qwen-portal-auth", "openclaw-lark"],
     "entries": {
       "qwen-portal-auth": {
         "enabled": true
       },
-      "feishu": {
-        "enabled": false
-      },
       "openclaw-lark": {
         "enabled": true
-      }
-    },
-    "installs": {
-      "openclaw-lark": {
-        "source": "npm",
-        "spec": "@larksuite/openclaw-lark",
-        "installPath": "/home/lcc/.openclaw/extensions/openclaw-lark",
-        "version": "2026.3.15",
-        "resolvedName": "@larksuite/openclaw-lark",
-        "resolvedVersion": "2026.3.15",
-        "resolvedSpec": "@larksuite/openclaw-lark@2026.3.15",
-        "integrity": "sha512-YGk63CgYG+YDUO2+TxdSPJZA6km52OpqAqf26vZHMUqawEKhiT4bcfD5JHh6VGazjUwRk5Bze1UyVKncc0csBA==",
-        "shasum": "997cb8ee9cf66dcd3a24477cb5f59f5fb1a57fff",
-        "resolvedAt": "2026-03-16T15:54:22.263Z",
-        "installedAt": "2026-03-16T15:55:34.467Z"
       }
     }
   }

@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.7",
-    "lastTouchedAt": "2026-03-12T00:44:02.343Z"
+    "lastTouchedVersion": "2026.3.13",
+    "lastTouchedAt": "2026-03-16T03:57:11.819Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-12T00:44:02.269Z",
@@ -244,6 +244,26 @@
       }
     }
   },
+  "channels": {
+    "feishu": {
+      "appId": "cli_a9144990f338dbc2",
+      "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
+      "requireMention": true,
+      "groupPolicy": "open",
+      "tools": {
+        "doc": true,
+        "drive": true,
+        "wiki": true,
+        "perm": true,
+        "bitable": true
+      },
+      "groups": {
+        "defaultAgent": "manager",
+        "threadMode": true,
+        "allowAgentMention": true
+      }
+    }
+  },
   "gateway": {
     "port": 18883,
     "mode": "local",
@@ -292,27 +312,9 @@
       "qwen-portal-auth": {
         "enabled": true
       },
-      "feishu": {"enabled": true}
+      "feishu": {
+        "enabled": true
+      }
     }
-  },
-     "channels": {
-       "feishu": {
-         "appId": "cli_a9144990f338dbc2",
-         "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
-         "requireMention": true,
-         "groupPolicy": "open",
-         "tools": {
-           "doc": true,
-           "drive": true,
-           "wiki": true,
-           "perm": false,
-           "bitable": true
-         },
-         "groups": {
-           "defaultAgent": "manager",
-           "threadMode": true,
-           "allowAgentMention": true
-         }
-       }
-     }
+  }
 }

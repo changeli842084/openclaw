@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "91287921-88c8-484f-b86c-abb6d831c9aa",
-    "updatedAt": 1773629902936,
+    "updatedAt": 1773633528478,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -305,7 +305,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773629896197,
+      "generatedAt": 1773633496679,
       "sessionId": "91287921-88c8-484f-b86c-abb6d831c9aa",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -325,9 +325,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 31819,
+        "chars": 31891,
         "projectContextChars": 9683,
-        "nonProjectContextChars": 22136
+        "nonProjectContextChars": 22208
       },
       "injectedWorkspaceFiles": [
         {
@@ -497,8 +497,8 @@
         ]
       },
       "tools": {
-        "listChars": 3458,
-        "schemaChars": 24115,
+        "listChars": 3530,
+        "schemaChars": 24742,
         "entries": [
           {
             "name": "read",
@@ -643,6 +643,12 @@
             "summaryChars": 81,
             "schemaChars": 486,
             "propertiesCount": 5
+          },
+          {
+            "name": "feishu_perm",
+            "summaryChars": 56,
+            "schemaChars": 627,
+            "propertiesCount": 6
           },
           {
             "name": "feishu_bitable_get_meta",
@@ -1229,7 +1235,7 @@
   },
   "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8": {
     "sessionId": "7cac2fac-d131-4d28-b7bd-47c17cb93cc5",
-    "updatedAt": 1773628617475,
+    "updatedAt": 1773633409696,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1242,11 +1248,11 @@
     "lastTo": "user:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
     "lastAccountId": "default",
     "origin": {
-      "label": "user:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
-      "provider": "heartbeat",
+      "label": "李程成",
+      "provider": "feishu",
       "surface": "feishu",
       "chatType": "direct",
-      "from": "user:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
+      "from": "feishu:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "to": "user:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "accountId": "default"
     },
@@ -1538,7 +1544,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773628539904,
+      "generatedAt": 1773633253117,
       "sessionId": "7cac2fac-d131-4d28-b7bd-47c17cb93cc5",
       "sessionKey": "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "provider": "bailian",
@@ -1558,9 +1564,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 31441,
+        "chars": 32101,
         "projectContextChars": 9683,
-        "nonProjectContextChars": 21758
+        "nonProjectContextChars": 22418
       },
       "injectedWorkspaceFiles": [
         {

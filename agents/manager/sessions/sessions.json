@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "c1090f08-226a-4910-8701-327a96af14c1",
-    "updatedAt": 1773705507258,
+    "updatedAt": 1773709199734,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -357,7 +357,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773705504678,
+      "generatedAt": 1773709048978,
       "sessionId": "c1090f08-226a-4910-8701-327a96af14c1",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -1419,7 +1419,7 @@
   },
   "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8": {
     "sessionId": "d5954795-7009-4af2-905b-17e75a0434a4",
-    "updatedAt": 1773703628028,
+    "updatedAt": 1773709199616,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1783,7 +1783,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773703557399,
+      "generatedAt": 1773709068152,
       "sessionId": "d5954795-7009-4af2-905b-17e75a0434a4",
       "sessionKey": "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "provider": "bailian",

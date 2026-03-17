@@ -1,17 +1,21 @@
 {
   "agent:manager:main": {
     "sessionId": "cd747170-d44d-421d-b413-33578b9d19f7",
-    "updatedAt": 1773719995962,
+    "updatedAt": 1773723494367,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "origin": {
-      "provider": "webchat",
+      "provider": "cron-event",
       "surface": "webchat",
-      "chatType": "direct"
+      "chatType": "direct",
+      "label": "heartbeat",
+      "from": "heartbeat",
+      "to": "heartbeat"
     },
     "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/cd747170-d44d-421d-b413-33578b9d19f7.jsonl",
     "compactionCount": 0,
@@ -356,7 +360,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773719982391,
+      "generatedAt": 1773723492386,
       "sessionId": "cd747170-d44d-421d-b413-33578b9d19f7",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -376,9 +380,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 40506,
+        "chars": 39333,
         "projectContextChars": 9683,
-        "nonProjectContextChars": 30823
+        "nonProjectContextChars": 29650
       },
       "injectedWorkspaceFiles": [
         {
@@ -568,8 +572,8 @@
         ]
       },
       "tools": {
-        "listChars": 10093,
-        "schemaChars": 51495,
+        "listChars": 9633,
+        "schemaChars": 48987,
         "entries": [
           {
             "name": "read",
@@ -614,34 +618,16 @@
             "propertiesCount": 18
           },
           {
-            "name": "nodes",
-            "summaryChars": 122,
-            "schemaChars": 1800,
-            "propertiesCount": 37
-          },
-          {
-            "name": "cron",
-            "summaryChars": 2689,
-            "schemaChars": 690,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
             "summaryChars": 123,
-            "schemaChars": 4898,
-            "propertiesCount": 91
+            "schemaChars": 5377,
+            "propertiesCount": 93
           },
           {
             "name": "tts",
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 464,
-            "schemaChars": 497,
-            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -920,7 +906,8 @@
     "cacheWrite": 0,
     "totalTokensFresh": false,
     "lastChannel": "webchat",
-    "contextTokens": 262144
+    "contextTokens": 262144,
+    "lastTo": "heartbeat"
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",
@@ -1436,7 +1423,7 @@
   },
   "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8": {
     "sessionId": "d5954795-7009-4af2-905b-17e75a0434a4",
-    "updatedAt": 1773718405661,
+    "updatedAt": 1773722880897,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1800,7 +1787,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773718339207,
+      "generatedAt": 1773722801219,
       "sessionId": "d5954795-7009-4af2-905b-17e75a0434a4",
       "sessionKey": "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "provider": "bailian",

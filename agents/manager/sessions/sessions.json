@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "c1090f08-226a-4910-8701-327a96af14c1",
-    "updatedAt": 1773709199734,
+    "updatedAt": 1773712720998,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -357,7 +357,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773709048978,
+      "generatedAt": 1773712712211,
       "sessionId": "c1090f08-226a-4910-8701-327a96af14c1",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -1419,7 +1419,7 @@
   },
   "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8": {
     "sessionId": "d5954795-7009-4af2-905b-17e75a0434a4",
-    "updatedAt": 1773709199616,
+    "updatedAt": 1773710526484,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -1432,12 +1432,12 @@
     "lastTo": "user:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
     "lastAccountId": "default",
     "origin": {
-      "label": "李程成",
+      "label": "feishu:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "provider": "feishu",
       "surface": "feishu",
       "chatType": "direct",
       "from": "feishu:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
-      "to": "user:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
+      "to": "ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "accountId": "default"
     },
     "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/d5954795-7009-4af2-905b-17e75a0434a4.jsonl",
@@ -1783,7 +1783,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773709068152,
+      "generatedAt": 1773710430382,
       "sessionId": "d5954795-7009-4af2-905b-17e75a0434a4",
       "sessionKey": "agent:manager:feishu:direct:ou_516fc2a2b118d27565c34dcb2f3dcfa8",
       "provider": "bailian",

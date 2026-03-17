@@ -44,6 +44,10 @@
     "skill-vetter": {
       "version": "1.0.0",
       "installedAt": 1773501640664
+    },
+    "amap-lbs-skill": {
+      "version": "1.0.0",
+      "installedAt": 1773715803320
     }
   }
 }

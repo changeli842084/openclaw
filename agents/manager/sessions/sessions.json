@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "a69afd59-c1fb-4c7f-874d-e43411b5fbaf",
-    "updatedAt": 1773820800100,
+    "updatedAt": 1773824295674,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -356,15 +356,13 @@
       ],
       "version": 0
     },
-    "modelProvider": "bailian",
-    "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773820774737,
+      "generatedAt": 1773824279197,
       "sessionId": "a69afd59-c1fb-4c7f-874d-e43411b5fbaf",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
-      "model": "kimi-k2.5",
+      "model": "MiniMax-M2.5",
       "workspaceDir": "/home/lcc/.openclaw/workspace-manager",
       "bootstrapMaxChars": 20000,
       "bootstrapTotalMaxChars": 150000,
@@ -380,9 +378,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 40506,
+        "chars": 39336,
         "projectContextChars": 9683,
-        "nonProjectContextChars": 30823
+        "nonProjectContextChars": 29653
       },
       "injectedWorkspaceFiles": [
         {
@@ -572,8 +570,8 @@
         ]
       },
       "tools": {
-        "listChars": 10093,
-        "schemaChars": 51495,
+        "listChars": 9633,
+        "schemaChars": 48987,
         "entries": [
           {
             "name": "read",
@@ -618,34 +616,16 @@
             "propertiesCount": 18
           },
           {
-            "name": "nodes",
-            "summaryChars": 122,
-            "schemaChars": 1800,
-            "propertiesCount": 37
-          },
-          {
-            "name": "cron",
-            "summaryChars": 2689,
-            "schemaChars": 690,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
             "summaryChars": 123,
-            "schemaChars": 4898,
-            "propertiesCount": 91
+            "schemaChars": 5377,
+            "propertiesCount": 93
           },
           {
             "name": "tts",
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 464,
-            "schemaChars": 497,
-            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -923,9 +903,13 @@
     "cacheRead": 6272,
     "cacheWrite": 0,
     "totalTokensFresh": false,
-    "contextTokens": 262144,
     "lastChannel": "webchat",
-    "lastTo": "heartbeat"
+    "providerOverride": "bailian",
+    "modelOverride": "MiniMax-M2.5",
+    "lastTo": "heartbeat",
+    "modelProvider": "bailian",
+    "model": "MiniMax-M2.5",
+    "contextTokens": 204800
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

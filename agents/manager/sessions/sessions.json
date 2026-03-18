@@ -1,18 +1,21 @@
 {
   "agent:manager:main": {
     "sessionId": "a69afd59-c1fb-4c7f-874d-e43411b5fbaf",
-    "updatedAt": 1773817192894,
+    "updatedAt": 1773820800100,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
+      "channel": "webchat",
       "to": "heartbeat"
     },
     "origin": {
       "label": "heartbeat",
       "provider": "cron-event",
       "from": "heartbeat",
-      "to": "heartbeat"
+      "to": "heartbeat",
+      "surface": "webchat",
+      "chatType": "direct"
     },
     "sessionFile": "/home/lcc/.openclaw/agents/manager/sessions/a69afd59-c1fb-4c7f-874d-e43411b5fbaf.jsonl",
     "compactionCount": 0,
@@ -357,7 +360,7 @@
     "model": "kimi-k2.5",
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773817189184,
+      "generatedAt": 1773820774737,
       "sessionId": "a69afd59-c1fb-4c7f-874d-e43411b5fbaf",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -377,9 +380,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 39333,
+        "chars": 40506,
         "projectContextChars": 9683,
-        "nonProjectContextChars": 29650
+        "nonProjectContextChars": 30823
       },
       "injectedWorkspaceFiles": [
         {
@@ -569,8 +572,8 @@
         ]
       },
       "tools": {
-        "listChars": 9633,
-        "schemaChars": 48987,
+        "listChars": 10093,
+        "schemaChars": 51495,
         "entries": [
           {
             "name": "read",
@@ -615,16 +618,34 @@
             "propertiesCount": 18
           },
           {
+            "name": "nodes",
+            "summaryChars": 122,
+            "schemaChars": 1800,
+            "propertiesCount": 37
+          },
+          {
+            "name": "cron",
+            "summaryChars": 2689,
+            "schemaChars": 690,
+            "propertiesCount": 13
+          },
+          {
             "name": "message",
             "summaryChars": 123,
-            "schemaChars": 5377,
-            "propertiesCount": 93
+            "schemaChars": 4898,
+            "propertiesCount": 91
           },
           {
             "name": "tts",
             "summaryChars": 152,
             "schemaChars": 223,
             "propertiesCount": 2
+          },
+          {
+            "name": "gateway",
+            "summaryChars": 464,
+            "schemaChars": 497,
+            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -902,8 +923,9 @@
     "cacheRead": 6272,
     "cacheWrite": 0,
     "totalTokensFresh": false,
-    "lastTo": "heartbeat",
-    "contextTokens": 262144
+    "contextTokens": 262144,
+    "lastChannel": "webchat",
+    "lastTo": "heartbeat"
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

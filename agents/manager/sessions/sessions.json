@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "c59452d1-980d-4535-ba2a-2e329d2f15f5",
-    "updatedAt": 1773892614776,
+    "updatedAt": 1773925117208,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -358,7 +358,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773892591347,
+      "generatedAt": 1773925110882,
       "sessionId": "c59452d1-980d-4535-ba2a-2e329d2f15f5",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -378,8 +378,8 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 39333,
-        "projectContextChars": 9683,
+        "chars": 39857,
+        "projectContextChars": 10207,
         "nonProjectContextChars": 29650
       },
       "injectedWorkspaceFiles": [
@@ -443,8 +443,8 @@
           "name": "MEMORY.md",
           "path": "/home/lcc/.openclaw/workspace-manager/MEMORY.md",
           "missing": false,
-          "rawChars": 1533,
-          "injectedChars": 1533,
+          "rawChars": 2057,
+          "injectedChars": 2057,
           "truncated": false
         }
       ],

@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "c373a181-5254-4ea0-8364-7058be36e798",
-    "updatedAt": 1774033105520,
+    "updatedAt": 1774036728513,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -10,7 +10,7 @@
     },
     "origin": {
       "label": "heartbeat",
-      "provider": "heartbeat",
+      "provider": "cron-event",
       "from": "heartbeat",
       "to": "heartbeat"
     },
@@ -355,7 +355,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774033085441,
+      "generatedAt": 1774036683464,
       "sessionId": "c373a181-5254-4ea0-8364-7058be36e798",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -375,9 +375,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 40283,
+        "chars": 40288,
         "projectContextChars": 10638,
-        "nonProjectContextChars": 29645
+        "nonProjectContextChars": 29650
       },
       "injectedWorkspaceFiles": [
         {

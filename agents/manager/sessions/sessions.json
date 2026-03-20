@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "c373a181-5254-4ea0-8364-7058be36e798",
-    "updatedAt": 1773971863833,
+    "updatedAt": 1773975482480,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -355,7 +355,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1773971860850,
+      "generatedAt": 1773975460929,
       "sessionId": "c373a181-5254-4ea0-8364-7058be36e798",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",

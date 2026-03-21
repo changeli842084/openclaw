@@ -303,11 +303,8 @@
       "nodeManager": "npm"
     },
     "entries": {
-      "goplaces": {
-        "apiKey": "AlzaSyBXZc7-3QPVQwEzdU88mNBcmgNdjX3GpP0"
-      },
       "nano-banana-pro": {
-        "apiKey": "AlzaSyCHmlMT6ZuCR6wx0SByYFwSlsiPi5-0JOw"
+        "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0"
       },
       "baidu-search": {
         "apiKey": "bce-v3/ALTAK-dg0mMRejmSQe3TenFMZzz/4ed25f9bb2f4e8b7475894bc6e36f3d194effc73"

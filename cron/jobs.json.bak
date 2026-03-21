@@ -8,7 +8,7 @@
       "name": "manager-heartbeat-high",
       "enabled": true,
       "createdAtMs": 1773557532064,
-      "updatedAtMs": 1774079596125,
+      "updatedAtMs": 1774083195888,
       "schedule": {
         "kind": "every",
         "everyMs": 300000,
@@ -21,14 +21,14 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). 检查任务状态：如果有待处理任务或活跃任务，执行高频巡查（检查各Agent状态、任务进度、是否卡死）。如果没有任务，回复 HEARTBEAT_OK 并等待低频巡查。"
       },
       "state": {
-        "nextRunAtMs": 1774079890147,
-        "lastRunAtMs": 1774079590147,
+        "nextRunAtMs": 1774083490278,
+        "lastRunAtMs": 1774083190278,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 5978,
+        "lastDurationMs": 5610,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0,
-        "runningAtMs": 1774079890155
+        "runningAtMs": 1774083490284
       }
     },
     {

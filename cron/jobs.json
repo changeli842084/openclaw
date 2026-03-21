@@ -8,7 +8,7 @@
       "name": "manager-heartbeat-high",
       "enabled": true,
       "createdAtMs": 1773557532064,
-      "updatedAtMs": 1774069102547,
+      "updatedAtMs": 1774072695552,
       "schedule": {
         "kind": "every",
         "everyMs": 300000,
@@ -21,11 +21,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). 检查任务状态：如果有待处理任务或活跃任务，执行高频巡查（检查各Agent状态、任务进度、是否卡死）。如果没有任务，回复 HEARTBEAT_OK 并等待低频巡查。"
       },
       "state": {
-        "nextRunAtMs": 1774069389760,
-        "lastRunAtMs": 1774069089760,
+        "nextRunAtMs": 1774072989885,
+        "lastRunAtMs": 1774072689885,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 12787,
+        "lastDurationMs": 5667,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }
@@ -37,7 +37,7 @@
       "name": "manager-heartbeat-low",
       "enabled": true,
       "createdAtMs": 1773557541359,
-      "updatedAtMs": 1774063669394,
+      "updatedAtMs": 1774070884937,
       "schedule": {
         "kind": "every",
         "everyMs": 7200000,
@@ -50,11 +50,11 @@
         "text": "Read HEARTBEAT.md if it exists (workspace context). 低频系统健康检查：检查所有Agent基本状态、系统资源、上下文健康度。如无异常，执行上下文压缩优化。"
       },
       "state": {
-        "nextRunAtMs": 1774070838239,
-        "lastRunAtMs": 1774063638239,
+        "nextRunAtMs": 1774078038250,
+        "lastRunAtMs": 1774070838250,
         "lastRunStatus": "ok",
         "lastStatus": "ok",
-        "lastDurationMs": 31155,
+        "lastDurationMs": 46687,
         "lastDeliveryStatus": "not-requested",
         "consecutiveErrors": 0
       }

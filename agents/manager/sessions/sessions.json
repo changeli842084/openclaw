@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "fb0957b5-2477-4fe0-9edb-49ba3f181df8",
-    "updatedAt": 1774335426935,
+    "updatedAt": 1774339028994,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -373,7 +373,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774335424566,
+      "generatedAt": 1774339024631,
       "sessionId": "fb0957b5-2477-4fe0-9edb-49ba3f181df8",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -808,9 +808,9 @@
     "lastChannel": "webchat",
     "lastTo": "heartbeat",
     "status": "done",
-    "startedAt": 1774335424616,
-    "endedAt": 1774335426838,
-    "runtimeMs": 2222
+    "startedAt": 1774339024656,
+    "endedAt": 1774339028895,
+    "runtimeMs": 4239
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

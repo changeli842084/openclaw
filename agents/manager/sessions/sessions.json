@@ -1,17 +1,16 @@
 {
   "agent:manager:main": {
     "sessionId": "fb0957b5-2477-4fe0-9edb-49ba3f181df8",
-    "updatedAt": 1774346233716,
+    "updatedAt": 1774349987166,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat",
-      "to": "heartbeat"
+      "channel": "webchat"
     },
     "origin": {
       "label": "heartbeat",
-      "provider": "cron-event",
+      "provider": "webchat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -373,7 +372,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774346224780,
+      "generatedAt": 1774349824886,
       "sessionId": "fb0957b5-2477-4fe0-9edb-49ba3f181df8",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -806,11 +805,8 @@
     "model": "kimi-k2.5",
     "contextTokens": 262144,
     "lastChannel": "webchat",
-    "status": "done",
-    "startedAt": 1774346224831,
-    "lastTo": "heartbeat",
-    "endedAt": 1774346233635,
-    "runtimeMs": 8804
+    "status": "running",
+    "startedAt": 1774349986922
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

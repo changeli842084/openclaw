@@ -118,7 +118,9 @@
     "scopes": [
       "operator.admin",
       "operator.approvals",
-      "operator.pairing"
+      "operator.pairing",
+      "operator.read",
+      "operator.write"
     ],
     "approvedScopes": [
       "operator.admin",
@@ -135,7 +137,7 @@
           "operator.pairing"
         ],
         "createdAtMs": 1773019151072,
-        "lastUsedAtMs": 1774329492706
+        "lastUsedAtMs": 1774347334794
       }
     },
     "createdAtMs": 1773019151071,

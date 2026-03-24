@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-16T16:06:32.767Z"
+    "lastTouchedVersion": "2026.3.23-2",
+    "lastTouchedAt": "2026-03-24T05:18:08.786Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-12T00:44:02.269Z",
@@ -140,11 +140,11 @@
         "bailian/glm-5": {},
         "bailian/kimi-k2.5": {}
       },
-      "compaction": {
-        "mode": "safeguard"
-      },
       "memorySearch": {
         "enabled": false
+      },
+      "compaction": {
+        "mode": "safeguard"
       }
     },
     "list": [
@@ -265,12 +265,17 @@
         "elapsed": true,
         "status": true
       },
-      "groupAllowFrom": ["ou_516fc2a2b118d27565c34dcb2f3dcfa8"],
+      "groupAllowFrom": [
+        "ou_516fc2a2b118d27565c34dcb2f3dcfa8"
+      ],
       "groups": {
         "defaultAgent": "manager",
         "threadMode": true,
         "allowAgentMention": true,
-        "allow": ["oc_10e2cf7797df66ebe51e37a918da6062", "oc_a3fc81eeb51c4e830f4422f2888b852b"]
+        "allow": [
+          "oc_10e2cf7797df66ebe51e37a918da6062",
+          "oc_a3fc81eeb51c4e830f4422f2888b852b"
+        ]
       }
     }
   },
@@ -315,12 +320,19 @@
     }
   },
   "plugins": {
-    "allow": ["qwen-portal-auth", "openclaw-lark"],
+    "allow": [
+      "qwen-portal-auth",
+      "openclaw-lark",
+      "feishu"
+    ],
     "entries": {
       "qwen-portal-auth": {
         "enabled": true
       },
       "openclaw-lark": {
+        "enabled": true
+      },
+      "feishu": {
         "enabled": true
       }
     }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-16T03:57:11.819Z"
+    "lastTouchedAt": "2026-03-16T16:06:32.767Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-12T00:44:02.269Z",
@@ -142,6 +142,9 @@
       },
       "compaction": {
         "mode": "safeguard"
+      },
+      "memorySearch": {
+        "enabled": false
       }
     },
     "list": [
@@ -249,7 +252,7 @@
       "appId": "cli_a9144990f338dbc2",
       "appSecret": "F3kITHEeAUvkoMtzL7661bOTn26y8GbM",
       "requireMention": true,
-      "groupPolicy": "open",
+      "groupPolicy": "allowlist",
       "streaming": false,
       "tools": {
         "doc": true,
@@ -257,16 +260,17 @@
         "wiki": true,
         "perm": true,
         "bitable": true
-        
       },
-      "footer":{
-         "elapsed": true,
-         "status": true
+      "footer": {
+        "elapsed": true,
+        "status": true
       },
+      "groupAllowFrom": ["ou_516fc2a2b118d27565c34dcb2f3dcfa8"],
       "groups": {
         "defaultAgent": "manager",
         "threadMode": true,
-        "allowAgentMention": true
+        "allowAgentMention": true,
+        "allow": ["oc_10e2cf7797df66ebe51e37a918da6062", "oc_a3fc81eeb51c4e830f4422f2888b852b"]
       }
     }
   },
@@ -299,11 +303,8 @@
       "nodeManager": "npm"
     },
     "entries": {
-      "goplaces": {
-        "apiKey": "AlzaSyBXZc7-3QPVQwEzdU88mNBcmgNdjX3GpP0"
-      },
       "nano-banana-pro": {
-        "apiKey": "AlzaSyCHmlMT6ZuCR6wx0SByYFwSlsiPi5-0JOw"
+        "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0"
       },
       "baidu-search": {
         "apiKey": "bce-v3/ALTAK-dg0mMRejmSQe3TenFMZzz/4ed25f9bb2f4e8b7475894bc6e36f3d194effc73"
@@ -314,11 +315,12 @@
     }
   },
   "plugins": {
+    "allow": ["qwen-portal-auth", "openclaw-lark"],
     "entries": {
       "qwen-portal-auth": {
         "enabled": true
       },
-      "feishu": {
+      "openclaw-lark": {
         "enabled": true
       }
     }

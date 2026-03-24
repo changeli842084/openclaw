@@ -6,9 +6,11 @@
       "token": "4Dq5x0K9eU3r0RICi5RyHStQFqiwne0D0cWCmz0-L8k",
       "role": "operator",
       "scopes": [
-        "operator.admin"
+        "operator.admin",
+        "operator.read",
+        "operator.write"
       ],
-      "updatedAtMs": 1774313749305
+      "updatedAtMs": 1774329469307
     }
   }
 }

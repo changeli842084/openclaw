@@ -1,3 +1,3 @@
-2026/03/17-12:05:43.401 9efb Reusing MANIFEST /home/lcc/.openclaw/browser/openclaw/user-data/Default/Sync Data/LevelDB/MANIFEST-000001
-2026/03/17-12:05:43.450 9efb Recovering log #3
-2026/03/17-12:05:43.450 9efb Reusing old log /home/lcc/.openclaw/browser/openclaw/user-data/Default/Sync Data/LevelDB/000003.log 
+2026/03/24-19:00:47.624 d670 Reusing MANIFEST /home/lcc/.openclaw/browser/openclaw/user-data/Default/Sync Data/LevelDB/MANIFEST-000001
+2026/03/24-19:00:47.662 d670 Recovering log #3
+2026/03/24-19:00:47.663 d670 Reusing old log /home/lcc/.openclaw/browser/openclaw/user-data/Default/Sync Data/LevelDB/000003.log 

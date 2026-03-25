@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "1a06e26a-510f-4200-acac-09274d3ab18a",
-    "updatedAt": 1774450699970,
+    "updatedAt": 1774454303726,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -399,7 +399,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774450693447,
+      "generatedAt": 1774454293569,
       "sessionId": "1a06e26a-510f-4200-acac-09274d3ab18a",
       "sessionKey": "agent:manager:main",
       "provider": "bailian",
@@ -837,11 +837,11 @@
     "modelProvider": "bailian",
     "model": "kimi-k2.5",
     "status": "done",
-    "startedAt": 1774450693469,
+    "startedAt": 1774454293616,
     "lastTo": "heartbeat",
     "contextTokens": 262144,
-    "endedAt": 1774450699841,
-    "runtimeMs": 6372
+    "endedAt": 1774454303604,
+    "runtimeMs": 9988
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

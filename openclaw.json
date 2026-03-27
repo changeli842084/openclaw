@@ -56,8 +56,8 @@
               "cacheRead": 0,
               "cacheWrite": 0
             },
-            "contextWindow": 1000000,
-            "maxTokens": 65536
+            "contextWindow": 16000,
+            "maxTokens": 4096
           },
           {
             "id": "qwen3-coder-plus",

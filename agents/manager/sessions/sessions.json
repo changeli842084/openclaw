@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "1499e227-7673-470d-a457-1dea6132c979",
-    "updatedAt": 1774669551335,
+    "updatedAt": 1774673151512,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -399,7 +399,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774669550503,
+      "generatedAt": 1774673150486,
       "sessionId": "1499e227-7673-470d-a457-1dea6132c979",
       "sessionKey": "agent:manager:main",
       "provider": "quan2go",
@@ -1041,11 +1041,11 @@
     "modelProvider": "quan2go",
     "model": "gpt-5.4",
     "status": "failed",
-    "startedAt": 1774669550523,
+    "startedAt": 1774673150530,
     "lastTo": "heartbeat",
     "contextTokens": 16000,
-    "endedAt": 1774669551179,
-    "runtimeMs": 656
+    "endedAt": 1774673151357,
+    "runtimeMs": 827
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

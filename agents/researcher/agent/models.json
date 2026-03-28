@@ -173,7 +173,7 @@
         },
         {
           "id": "gpt-5.3-codex",
-          "name": "gpt-5.3-codex (Custom Provider)",
+          "name": "gpt-5.3-codex",
           "reasoning": false,
           "input": [
             "text",
@@ -185,8 +185,8 @@
             "cacheRead": 0,
             "cacheWrite": 0
           },
-          "contextWindow": 1000000,
-          "maxTokens": 65536
+          "contextWindow": 16000,
+          "maxTokens": 4096
         },
         {
           "id": "qwen3-coder-plus",

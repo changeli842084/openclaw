@@ -198,7 +198,7 @@
         "name": "coder",
         "workspace": "/home/lcc/.openclaw/workspace-coder",
         "agentDir": "/home/lcc/.openclaw/agents/coder/agent",
-        "model": "quan2go/gpt-5.3-codex",
+        "model": "quan2go/gpt-5.4",
         "identity": {
           "name": "程序员",
           "emoji": "💻"

@@ -176,7 +176,7 @@
         },
         {
           "id": "gpt-5.3-codex",
-          "name": "gpt-5.3-codex (Custom Provider)",
+          "name": "gpt-5.3-codex",
           "reasoning": false,
           "input": [
             "text",

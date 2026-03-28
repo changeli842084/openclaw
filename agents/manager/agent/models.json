@@ -171,7 +171,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 16000,
-          "maxTokens": 4096
+          "maxTokens": 4096,
+          "api": "openai-completions"
         },
         {
           "id": "gpt-5.3-codex",
@@ -188,7 +189,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 16000,
-          "maxTokens": 4096
+          "maxTokens": 4096,
+          "api": "openai-completions"
         },
         {
           "id": "qwen3-coder-plus",
@@ -204,7 +206,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 1000000,
-          "maxTokens": 65536
+          "maxTokens": 65536,
+          "api": "openai-completions"
         },
         {
           "id": "qwen3-coder-next",
@@ -220,7 +223,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 262144,
-          "maxTokens": 65536
+          "maxTokens": 65536,
+          "api": "openai-completions"
         },
         {
           "id": "MiniMax-M2.5",
@@ -236,7 +240,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 204800,
-          "maxTokens": 131072
+          "maxTokens": 131072,
+          "api": "openai-completions"
         },
         {
           "id": "glm-5",
@@ -252,7 +257,8 @@
             "cacheWrite": 0
           },
           "contextWindow": 202752,
-          "maxTokens": 16384
+          "maxTokens": 16384,
+          "api": "openai-completions"
         }
       ]
     }

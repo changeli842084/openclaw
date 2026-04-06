@@ -1,16 +1,17 @@
 {
   "agent:manager:main": {
     "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
-    "updatedAt": 1775476185870,
+    "updatedAt": 1775479569722,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "origin": {
-      "label": "openclaw-tui",
-      "provider": "webchat",
+      "label": "heartbeat",
+      "provider": "heartbeat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -401,7 +402,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775476131967,
+      "generatedAt": 1775479565749,
       "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
       "sessionKey": "agent:manager:main",
       "provider": "quan2go",
@@ -421,9 +422,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 49078,
+        "chars": 47748,
         "projectContextChars": 15195,
-        "nonProjectContextChars": 33883
+        "nonProjectContextChars": 32553
       },
       "injectedWorkspaceFiles": [
         {
@@ -629,8 +630,8 @@
         ]
       },
       "tools": {
-        "listChars": 11634,
-        "schemaChars": 65842,
+        "listChars": 11174,
+        "schemaChars": 57163,
         "entries": [
           {
             "name": "read",
@@ -669,22 +670,10 @@
             "propertiesCount": 18
           },
           {
-            "name": "nodes",
-            "summaryChars": 118,
-            "schemaChars": 1589,
-            "propertiesCount": 32
-          },
-          {
-            "name": "cron",
-            "summaryChars": 3570,
-            "schemaChars": 6761,
-            "propertiesCount": 13
-          },
-          {
             "name": "message",
             "summaryChars": 197,
-            "schemaChars": 5628,
-            "propertiesCount": 104
+            "schemaChars": 5796,
+            "propertiesCount": 105
           },
           {
             "name": "tts",
@@ -697,12 +686,6 @@
             "summaryChars": 435,
             "schemaChars": 1195,
             "propertiesCount": 10
-          },
-          {
-            "name": "gateway",
-            "summaryChars": 464,
-            "schemaChars": 497,
-            "propertiesCount": 12
           },
           {
             "name": "agents_list",
@@ -1061,12 +1044,13 @@
     "modelProvider": "quan2go",
     "model": "gpt-5.4",
     "status": "done",
-    "startedAt": 1775476132091,
+    "startedAt": 1775479566236,
     "contextTokens": 16000,
     "lastChannel": "webchat",
     "channel": "webchat",
-    "endedAt": 1775476184945,
-    "runtimeMs": 52854
+    "lastTo": "heartbeat",
+    "endedAt": 1775479569474,
+    "runtimeMs": 3238
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

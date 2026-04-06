@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
-    "updatedAt": 1775464756886,
+    "updatedAt": 1775469493549,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -982,13 +982,11 @@
     "totalTokensFresh": false,
     "modelProvider": "quan2go",
     "model": "gpt-5.4",
-    "status": "failed",
-    "startedAt": 1775445168608,
+    "status": "running",
+    "startedAt": 1775469493302,
     "contextTokens": 16000,
     "lastChannel": "webchat",
-    "channel": "webchat",
-    "endedAt": 1775446028828,
-    "runtimeMs": 860220
+    "channel": "webchat"
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

@@ -1,10 +1,10 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.4.2",
-    "lastTouchedAt": "2026-04-06T03:03:47.278Z"
+    "lastTouchedAt": "2026-04-06T06:08:22.672Z"
   },
   "wizard": {
-    "lastRunAt": "2026-04-06T03:03:47.249Z",
+    "lastRunAt": "2026-04-06T06:08:22.475Z",
     "lastRunVersion": "2026.4.2",
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
@@ -328,14 +328,10 @@
   },
   "plugins": {
     "allow": [
-      "qwen-portal-auth",
       "openclaw-lark",
       "feishu"
     ],
     "entries": {
-      "qwen-portal-auth": {
-        "enabled": true
-      },
       "openclaw-lark": {
         "enabled": true
       },

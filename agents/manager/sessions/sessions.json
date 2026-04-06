@@ -1,17 +1,16 @@
 {
   "agent:manager:main": {
     "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
-    "updatedAt": 1775446881881,
+    "updatedAt": 1775455832336,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat",
-      "to": "heartbeat"
+      "channel": "webchat"
     },
     "origin": {
-      "label": "heartbeat",
-      "provider": "heartbeat",
+      "label": "openclaw-tui",
+      "provider": "webchat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -989,8 +988,7 @@
     "lastChannel": "webchat",
     "channel": "webchat",
     "endedAt": 1775446028828,
-    "runtimeMs": 860220,
-    "lastTo": "heartbeat"
+    "runtimeMs": 860220
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

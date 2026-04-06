@@ -22,7 +22,7 @@
     "providers": {
       "quan2go": {
         "baseUrl": "https://capi.quan2go.com/v1",
-        "apiKey": "0E5EF76C-765D-4141-B612-E491693ADB02",
+        "apiKey": "803028BA-1E01-4A8A-B592-3F46E3AB3953",
         "api": "openai-completions",
         "models": [
           {

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.23-2",
-    "lastTouchedAt": "2026-03-24T05:18:08.786Z"
+    "lastTouchedVersion": "2026.4.2",
+    "lastTouchedAt": "2026-04-06T03:03:47.278Z"
   },
   "wizard": {
-    "lastRunAt": "2026-03-12T00:44:02.269Z",
-    "lastRunVersion": "2026.3.7",
+    "lastRunAt": "2026-04-06T03:03:47.249Z",
+    "lastRunVersion": "2026.4.2",
     "lastRunCommand": "doctor",
     "lastRunMode": "local"
   },
@@ -124,6 +124,11 @@
             "maxTokens": 16384
           }
         ]
+      },
+      "google": {
+        "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0",
+        "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+        "models": []
       }
     }
   },
@@ -147,6 +152,9 @@
       },
       "compaction": {
         "mode": "safeguard"
+      },
+      "imageGenerationModel": {
+        "primary": "google/gemini-3-pro-image-preview"
       }
     },
     "list": [
@@ -170,7 +178,7 @@
         "name": "researcher",
         "workspace": "/home/lcc/.openclaw/workspace-researcher",
         "agentDir": "/home/lcc/.openclaw/agents/researcher/agent",
-        "model": "quan2go/gpt-5.4",
+        "model": "quan2go/gpt-5.3-codex",
         "identity": {
           "name": "研究员",
           "emoji": "🔍"
@@ -184,7 +192,7 @@
         "name": "office",
         "workspace": "/home/lcc/.openclaw/workspace-office",
         "agentDir": "/home/lcc/.openclaw/agents/office/agent",
-        "model": "quan2go/gpt-5.4",
+        "model": "quan2go/gpt-5.3-codex",
         "identity": {
           "name": "办公专家",
           "emoji": "📊"
@@ -198,7 +206,7 @@
         "name": "coder",
         "workspace": "/home/lcc/.openclaw/workspace-coder",
         "agentDir": "/home/lcc/.openclaw/agents/coder/agent",
-        "model": "quan2go/gpt-5.4",
+        "model": "quan2go/gpt-5.3-codex",
         "identity": {
           "name": "程序员",
           "emoji": "💻"
@@ -310,9 +318,6 @@
       "nodeManager": "npm"
     },
     "entries": {
-      "nano-banana-pro": {
-        "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0"
-      },
       "baidu-search": {
         "apiKey": "bce-v3/ALTAK-dg0mMRejmSQe3TenFMZzz/4ed25f9bb2f4e8b7475894bc6e36f3d194effc73"
       },

@@ -261,6 +261,11 @@
           "api": "openai-completions"
         }
       ]
+    },
+    "google": {
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0",
+      "models": []
     }
   }
 }

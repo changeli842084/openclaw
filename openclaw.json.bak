@@ -1,7 +1,7 @@
 {
   "meta": {
-    "lastTouchedVersion": "2026.3.13",
-    "lastTouchedAt": "2026-03-16T16:06:32.767Z"
+    "lastTouchedVersion": "2026.3.23-2",
+    "lastTouchedAt": "2026-03-24T05:18:08.786Z"
   },
   "wizard": {
     "lastRunAt": "2026-03-12T00:44:02.269Z",
@@ -20,14 +20,14 @@
   "models": {
     "mode": "merge",
     "providers": {
-      "bailian": {
-        "baseUrl": "https://coding.dashscope.aliyuncs.com/v1",
-        "apiKey": "sk-sp-94f1b0ad9b544096ae1406ebe29c506e",
+      "quan2go": {
+        "baseUrl": "https://capi.quan2go.com/v1",
+        "apiKey": "803028BA-1E01-4A8A-B592-3F46E3AB3953",
         "api": "openai-completions",
         "models": [
           {
-            "id": "kimi-k2.5",
-            "name": "kimi-k2.5",
+            "id": "gpt-5.4",
+            "name": "gpt-5.4 (Custom Provider)",
             "reasoning": false,
             "input": [
               "text",
@@ -39,12 +39,12 @@
               "cacheRead": 0,
               "cacheWrite": 0
             },
-            "contextWindow": 262144,
-            "maxTokens": 32768
+            "contextWindow": 16000,
+            "maxTokens": 4096
           },
           {
-            "id": "qwen3.5-plus",
-            "name": "qwen3.5-plus",
+            "id": "gpt-5.3-codex",
+            "name": "gpt-5.3-codex",
             "reasoning": false,
             "input": [
               "text",
@@ -56,8 +56,8 @@
               "cacheRead": 0,
               "cacheWrite": 0
             },
-            "contextWindow": 1000000,
-            "maxTokens": 65536
+            "contextWindow": 16000,
+            "maxTokens": 4096
           },
           {
             "id": "qwen3-coder-plus",
@@ -130,9 +130,11 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "bailian/kimi-k2.5"
+        "primary": "quan2go/gpt-5.4"
       },
       "models": {
+        "quan2go/gpt-5.4": {},
+        "quan2go/gpt-5.3-codex": {},
         "bailian/qwen3.5-plus": {},
         "bailian/qwen3-coder-next": {},
         "bailian/qwen3-coder-plus": {},
@@ -140,11 +142,11 @@
         "bailian/glm-5": {},
         "bailian/kimi-k2.5": {}
       },
-      "compaction": {
-        "mode": "safeguard"
-      },
       "memorySearch": {
         "enabled": false
+      },
+      "compaction": {
+        "mode": "safeguard"
       }
     },
     "list": [
@@ -154,7 +156,7 @@
         "name": "manager",
         "workspace": "/home/lcc/.openclaw/workspace-manager",
         "agentDir": "/home/lcc/.openclaw/agents/manager/agent",
-        "model": "bailian/kimi-k2.5",
+        "model": "quan2go/gpt-5.4",
         "identity": {
           "name": "项目经理",
           "emoji": "👔"
@@ -168,7 +170,7 @@
         "name": "researcher",
         "workspace": "/home/lcc/.openclaw/workspace-researcher",
         "agentDir": "/home/lcc/.openclaw/agents/researcher/agent",
-        "model": "bailian/qwen3.5-plus",
+        "model": "quan2go/gpt-5.4",
         "identity": {
           "name": "研究员",
           "emoji": "🔍"
@@ -182,7 +184,7 @@
         "name": "office",
         "workspace": "/home/lcc/.openclaw/workspace-office",
         "agentDir": "/home/lcc/.openclaw/agents/office/agent",
-        "model": "bailian/MiniMax-M2.5",
+        "model": "quan2go/gpt-5.4",
         "identity": {
           "name": "办公专家",
           "emoji": "📊"
@@ -196,7 +198,7 @@
         "name": "coder",
         "workspace": "/home/lcc/.openclaw/workspace-coder",
         "agentDir": "/home/lcc/.openclaw/agents/coder/agent",
-        "model": "bailian/qwen3-coder-plus",
+        "model": "quan2go/gpt-5.4",
         "identity": {
           "name": "程序员",
           "emoji": "💻"
@@ -265,12 +267,17 @@
         "elapsed": true,
         "status": true
       },
-      "groupAllowFrom": ["ou_516fc2a2b118d27565c34dcb2f3dcfa8"],
+      "groupAllowFrom": [
+        "ou_516fc2a2b118d27565c34dcb2f3dcfa8"
+      ],
       "groups": {
         "defaultAgent": "manager",
         "threadMode": true,
         "allowAgentMention": true,
-        "allow": ["oc_10e2cf7797df66ebe51e37a918da6062", "oc_a3fc81eeb51c4e830f4422f2888b852b"]
+        "allow": [
+          "oc_10e2cf7797df66ebe51e37a918da6062",
+          "oc_a3fc81eeb51c4e830f4422f2888b852b"
+        ]
       }
     }
   },
@@ -315,12 +322,19 @@
     }
   },
   "plugins": {
-    "allow": ["qwen-portal-auth", "openclaw-lark"],
+    "allow": [
+      "qwen-portal-auth",
+      "openclaw-lark",
+      "feishu"
+    ],
     "entries": {
       "qwen-portal-auth": {
         "enabled": true
       },
       "openclaw-lark": {
+        "enabled": true
+      },
+      "feishu": {
         "enabled": true
       }
     }

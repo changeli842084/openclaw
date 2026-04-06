@@ -253,6 +253,11 @@
           "maxTokens": 16384
         }
       ]
+    },
+    "google": {
+      "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "models": []
     }
   }
 }

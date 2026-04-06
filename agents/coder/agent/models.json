@@ -169,8 +169,7 @@
             "cacheWrite": 0
           },
           "contextWindow": 16000,
-          "maxTokens": 4096,
-          "api": "openai-completions"
+          "maxTokens": 4096
         },
         {
           "id": "gpt-5.3-codex",
@@ -187,8 +186,7 @@
             "cacheWrite": 0
           },
           "contextWindow": 16000,
-          "maxTokens": 4096,
-          "api": "openai-completions"
+          "maxTokens": 4096
         },
         {
           "id": "qwen3-coder-plus",
@@ -204,8 +202,7 @@
             "cacheWrite": 0
           },
           "contextWindow": 1000000,
-          "maxTokens": 65536,
-          "api": "openai-completions"
+          "maxTokens": 65536
         },
         {
           "id": "qwen3-coder-next",
@@ -221,8 +218,7 @@
             "cacheWrite": 0
           },
           "contextWindow": 262144,
-          "maxTokens": 65536,
-          "api": "openai-completions"
+          "maxTokens": 65536
         },
         {
           "id": "MiniMax-M2.5",
@@ -238,8 +234,7 @@
             "cacheWrite": 0
           },
           "contextWindow": 204800,
-          "maxTokens": 131072,
-          "api": "openai-completions"
+          "maxTokens": 131072
         },
         {
           "id": "glm-5",
@@ -255,10 +250,14 @@
             "cacheWrite": 0
           },
           "contextWindow": 202752,
-          "maxTokens": 16384,
-          "api": "openai-completions"
+          "maxTokens": 16384
         }
       ]
+    },
+    "google": {
+      "apiKey": "AIzaSyD6_pb7flLLvOLVzOMSzP20qVulbtd2Yl0",
+      "baseUrl": "https://generativelanguage.googleapis.com/v1beta",
+      "models": []
     }
   }
 }

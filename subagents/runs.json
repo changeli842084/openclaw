@@ -1,4 +1,37 @@
 {
   "version": 2,
-  "runs": {}
+  "runs": {
+    "8c4cb677-330c-4960-b55e-b1ab529c36db": {
+      "runId": "8c4cb677-330c-4960-b55e-b1ab529c36db",
+      "childSessionKey": "agent:manager:subagent:fa4ee131-e3aa-486f-a156-1ce1e8026772",
+      "controllerSessionKey": "agent:manager:main",
+      "requesterSessionKey": "agent:manager:main",
+      "requesterOrigin": {
+        "channel": "webchat"
+      },
+      "requesterDisplayKey": "agent:manager:main",
+      "task": "这是一次模型可用性探测。请只回复这四个字符：PING",
+      "cleanup": "keep",
+      "expectsCompletionMessage": true,
+      "spawnMode": "run",
+      "model": "quan2go/gpt-5.3-codex",
+      "workspaceDir": "/home/lcc/.openclaw/workspace-manager",
+      "runTimeoutSeconds": 45,
+      "createdAt": 1775444801667,
+      "startedAt": 1775444808434,
+      "sessionStartedAt": 1775444801667,
+      "accumulatedRuntimeMs": 0,
+      "cleanupHandled": true,
+      "retainAttachmentsOnKeep": false,
+      "endedAt": 1775444815087,
+      "outcome": {
+        "status": "ok"
+      },
+      "endedReason": "subagent-complete",
+      "frozenResultText": "PING",
+      "frozenResultCapturedAt": 1775444815567,
+      "endedHookEmittedAt": 1775444830790,
+      "cleanupCompletedAt": 1775444830792
+    }
+  }
 }

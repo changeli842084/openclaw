@@ -1,7 +1,7 @@
 {
   "agent:manager:main": {
     "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
-    "updatedAt": 1774798390014,
+    "updatedAt": 1775440381428,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
@@ -399,7 +399,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774798258288,
+      "generatedAt": 1775440378266,
       "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
       "sessionKey": "agent:manager:main",
       "provider": "quan2go",
@@ -419,9 +419,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 47489,
+        "chars": 46164,
         "projectContextChars": 15195,
-        "nonProjectContextChars": 32294
+        "nonProjectContextChars": 30969
       },
       "injectedWorkspaceFiles": [
         {
@@ -627,8 +627,8 @@
         ]
       },
       "tools": {
-        "listChars": 11075,
-        "schemaChars": 58179,
+        "listChars": 9590,
+        "schemaChars": 46585,
         "entries": [
           {
             "name": "read",
@@ -638,9 +638,9 @@
           },
           {
             "name": "edit",
-            "summaryChars": 129,
-            "schemaChars": 1135,
-            "propertiesCount": 12
+            "summaryChars": 326,
+            "schemaChars": 1103,
+            "propertiesCount": 5
           },
           {
             "name": "write",
@@ -651,7 +651,7 @@
           {
             "name": "exec",
             "summaryChars": 181,
-            "schemaChars": 1086,
+            "schemaChars": 1098,
             "propertiesCount": 12
           },
           {
@@ -661,12 +661,6 @@
             "propertiesCount": 12
           },
           {
-            "name": "browser",
-            "summaryChars": 1066,
-            "schemaChars": 2799,
-            "propertiesCount": 48
-          },
-          {
             "name": "canvas",
             "summaryChars": 106,
             "schemaChars": 661,
@@ -674,9 +668,9 @@
           },
           {
             "name": "message",
-            "summaryChars": 197,
-            "schemaChars": 5796,
-            "propertiesCount": 105
+            "summaryChars": 89,
+            "schemaChars": 5521,
+            "propertiesCount": 104
           },
           {
             "name": "tts",
@@ -728,7 +722,7 @@
           },
           {
             "name": "session_status",
-            "summaryChars": 207,
+            "summaryChars": 262,
             "schemaChars": 89,
             "propertiesCount": 2
           },
@@ -745,90 +739,6 @@
             "propertiesCount": 3
           },
           {
-            "name": "feishu_doc",
-            "summaryChars": 321,
-            "schemaChars": 2898,
-            "propertiesCount": 27
-          },
-          {
-            "name": "feishu_app_scopes",
-            "summaryChars": 102,
-            "schemaChars": 33,
-            "propertiesCount": 0
-          },
-          {
-            "name": "feishu_chat",
-            "summaryChars": 59,
-            "schemaChars": 606,
-            "propertiesCount": 6
-          },
-          {
-            "name": "feishu_wiki",
-            "summaryChars": 83,
-            "schemaChars": 971,
-            "propertiesCount": 10
-          },
-          {
-            "name": "feishu_drive",
-            "summaryChars": 81,
-            "schemaChars": 486,
-            "propertiesCount": 5
-          },
-          {
-            "name": "feishu_perm",
-            "summaryChars": 56,
-            "schemaChars": 627,
-            "propertiesCount": 6
-          },
-          {
-            "name": "feishu_bitable_get_meta",
-            "summaryChars": 114,
-            "schemaChars": 170,
-            "propertiesCount": 1
-          },
-          {
-            "name": "feishu_bitable_list_fields",
-            "summaryChars": 76,
-            "schemaChars": 255,
-            "propertiesCount": 2
-          },
-          {
-            "name": "feishu_bitable_list_records",
-            "summaryChars": 64,
-            "schemaChars": 462,
-            "propertiesCount": 4
-          },
-          {
-            "name": "feishu_bitable_get_record",
-            "summaryChars": 46,
-            "schemaChars": 335,
-            "propertiesCount": 3
-          },
-          {
-            "name": "feishu_bitable_create_record",
-            "summaryChars": 44,
-            "schemaChars": 549,
-            "propertiesCount": 3
-          },
-          {
-            "name": "feishu_bitable_update_record",
-            "summaryChars": 50,
-            "schemaChars": 473,
-            "propertiesCount": 4
-          },
-          {
-            "name": "feishu_bitable_create_app",
-            "summaryChars": 57,
-            "schemaChars": 243,
-            "propertiesCount": 2
-          },
-          {
-            "name": "feishu_bitable_create_field",
-            "summaryChars": 46,
-            "schemaChars": 911,
-            "propertiesCount": 5
-          },
-          {
             "name": "feishu_get_user",
             "summaryChars": 75,
             "schemaChars": 185,
@@ -839,6 +749,12 @@
             "summaryChars": 55,
             "schemaChars": 311,
             "propertiesCount": 3
+          },
+          {
+            "name": "feishu_chat",
+            "summaryChars": 92,
+            "schemaChars": 519,
+            "propertiesCount": 6
           },
           {
             "name": "feishu_chat_members",
@@ -1040,12 +956,12 @@
     "totalTokensFresh": false,
     "modelProvider": "quan2go",
     "model": "gpt-5.4",
-    "status": "done",
-    "startedAt": 1774798258306,
+    "status": "failed",
+    "startedAt": 1775440378348,
     "lastTo": "heartbeat",
     "contextTokens": 16000,
-    "endedAt": 1774798389733,
-    "runtimeMs": 131427
+    "endedAt": 1775440381052,
+    "runtimeMs": 2704
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

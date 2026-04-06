@@ -17,7 +17,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
     
     # Root command
     if ($commandPath -eq "") {
-         $completions = @('mcp','completion','setup','onboard','configure','config','backup','doctor','dashboard','reset','uninstall','message','memory','agent','agents','status','health','sessions','browser','acp','gateway','daemon','logs','system','models','approvals','nodes','devices','node','sandbox','tui','cron','dns','docs','hooks','webhooks','qr','clawbot','feishu-diagnose','pairing','plugins','channels','directory','security','secrets','skills','update', '-V,','--dev','--profile','--log-level','--no-color') 
+         $completions = @('mcp','completion','setup','onboard','configure','config','backup','doctor','dashboard','reset','uninstall','message','agent','agents','status','health','sessions','tasks','acp','gateway','daemon','logs','system','models','approvals','nodes','devices','node','sandbox','tui','cron','dns','docs','hooks','webhooks','qr','clawbot','memory','feishu-diagnose','pairing','plugins','channels','directory','security','secrets','skills','update', '-V,','--container','--dev','--profile','--log-level','--no-color') 
          $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
             [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
          }
@@ -39,7 +39,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'onboard') {
-                $completions = @('--workspace','--reset','--reset-scope','--non-interactive','--accept-risk','--flow','--mode','--auth-choice','--token-provider','--token','--token-profile-id','--token-expires-in','--secret-input-mode','--cloudflare-ai-gateway-account-id','--cloudflare-ai-gateway-gateway-id','--litellm-api-key','--anthropic-api-key','--byteplus-api-key','--chutes-api-key','--cloudflare-ai-gateway-api-key','--deepseek-api-key','--fal-api-key','--gemini-api-key','--huggingface-api-key','--kilocode-api-key','--kimi-code-api-key','--minimax-api-key','--mistral-api-key','--modelstudio-standard-api-key-cn','--modelstudio-standard-api-key','--modelstudio-api-key-cn','--modelstudio-api-key','--moonshot-api-key','--openai-api-key','--opencode-zen-api-key','--opencode-go-api-key','--openrouter-api-key','--qianfan-api-key','--synthetic-api-key','--together-api-key','--venice-api-key','--ai-gateway-api-key','--volcengine-api-key','--xai-api-key','--xiaomi-api-key','--zai-api-key','--custom-base-url','--custom-api-key','--custom-model-id','--custom-provider-id','--custom-compatibility','--gateway-port','--gateway-bind','--gateway-auth','--gateway-token','--gateway-token-ref-env','--gateway-password','--remote-url','--remote-token','--tailscale','--tailscale-reset-on-exit','--install-daemon','--no-install-daemon','--skip-daemon','--daemon-runtime','--skip-channels','--skip-skills','--skip-search','--skip-health','--skip-ui','--node-manager','--json')
+                $completions = @('--workspace','--reset','--reset-scope','--non-interactive','--accept-risk','--flow','--mode','--auth-choice','--token-provider','--token','--token-profile-id','--token-expires-in','--secret-input-mode','--cloudflare-ai-gateway-account-id','--cloudflare-ai-gateway-gateway-id','--anthropic-api-key','--byteplus-api-key','--chutes-api-key','--cloudflare-ai-gateway-api-key','--deepseek-api-key','--fal-api-key','--gemini-api-key','--huggingface-api-key','--kilocode-api-key','--kimi-code-api-key','--litellm-api-key','--minimax-api-key','--mistral-api-key','--modelstudio-standard-api-key-cn','--modelstudio-standard-api-key','--modelstudio-api-key-cn','--modelstudio-api-key','--moonshot-api-key','--openai-api-key','--opencode-zen-api-key','--opencode-go-api-key','--openrouter-api-key','--qianfan-api-key','--synthetic-api-key','--together-api-key','--venice-api-key','--ai-gateway-api-key','--volcengine-api-key','--xai-api-key','--xiaomi-api-key','--zai-api-key','--custom-base-url','--custom-api-key','--custom-model-id','--custom-provider-id','--custom-compatibility','--gateway-port','--gateway-bind','--gateway-auth','--gateway-token','--gateway-token-ref-env','--gateway-password','--remote-url','--remote-token','--tailscale','--tailscale-reset-on-exit','--install-daemon','--no-install-daemon','--skip-daemon','--daemon-runtime','--skip-channels','--skip-skills','--skip-search','--skip-health','--skip-ui','--node-manager','--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -53,7 +53,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'config') {
-                $completions = @('get','set','unset','file','validate','--section')
+                $completions = @('get','set','unset','file','schema','validate','--section')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -416,34 +416,6 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
                 }
             }
 
-            if ($commandPath -eq 'memory') {
-                $completions = @('status','index','search')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'memory status') {
-                $completions = @('--agent','--json','--deep','--index','--verbose')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'memory index') {
-                $completions = @('--agent','--force','--verbose')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'memory search') {
-                $completions = @('--query','--agent','--max-results','--min-score','--json')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
             if ($commandPath -eq 'agent') {
                 $completions = @('-m','-t','--session-id','--agent','--thinking','--verbose','--channel','--reply-to','--reply-channel','--reply-account','--local','--deliver','--json','--timeout')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
@@ -535,372 +507,57 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
                 }
             }
 
-            if ($commandPath -eq 'browser') {
-                $completions = @('status','start','stop','reset-profile','tabs','tab','open','focus','close','profiles','create-profile','delete-profile','screenshot','snapshot','navigate','resize','click','type','press','hover','scrollintoview','drag','select','upload','waitfordownload','download','dialog','fill','wait','evaluate','console','pdf','responsebody','highlight','errors','requests','trace','cookies','storage','set','--browser-profile','--json','--url','--token','--timeout','--expect-final')
+            if ($commandPath -eq 'tasks') {
+                $completions = @('list','audit','maintenance','show','notify','cancel','flow','--json','--runtime','--status')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser tab') {
-                $completions = @('new','select','close')
+            if ($commandPath -eq 'tasks list') {
+                $completions = @('--json','--runtime','--status')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser create-profile') {
-                $completions = @('--name','--color','--cdp-url','--user-data-dir','--driver')
+            if ($commandPath -eq 'tasks audit') {
+                $completions = @('--json','--severity','--code','--limit')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser delete-profile') {
-                $completions = @('--name')
+            if ($commandPath -eq 'tasks maintenance') {
+                $completions = @('--json','--apply')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser screenshot') {
-                $completions = @('--full-page','--ref','--element','--type')
+            if ($commandPath -eq 'tasks show') {
+                $completions = @('--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser snapshot') {
-                $completions = @('--format','--target-id','--limit','--mode','--efficient','--interactive','--compact','--depth','--selector','--frame','--labels','--out')
+            if ($commandPath -eq 'tasks flow') {
+                $completions = @('list','show','cancel')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser navigate') {
-                $completions = @('--target-id')
+            if ($commandPath -eq 'tasks flow list') {
+                $completions = @('--json','--status')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
-            if ($commandPath -eq 'browser resize') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser click') {
-                $completions = @('--target-id','--double','--button','--modifiers')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser type') {
-                $completions = @('--submit','--slowly','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser press') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser hover') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser scrollintoview') {
-                $completions = @('--target-id','--timeout-ms')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser drag') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser select') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser upload') {
-                $completions = @('--ref','--input-ref','--element','--target-id','--timeout-ms')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser waitfordownload') {
-                $completions = @('--target-id','--timeout-ms')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser download') {
-                $completions = @('--target-id','--timeout-ms')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser dialog') {
-                $completions = @('--accept','--dismiss','--prompt','--target-id','--timeout-ms')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser fill') {
-                $completions = @('--fields','--fields-file','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser wait') {
-                $completions = @('--time','--text','--text-gone','--url','--load','--fn','--timeout-ms','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser evaluate') {
-                $completions = @('--fn','--ref','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser console') {
-                $completions = @('--level','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser pdf') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser responsebody') {
-                $completions = @('--target-id','--timeout-ms','--max-chars')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser highlight') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser errors') {
-                $completions = @('--clear','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser requests') {
-                $completions = @('--filter','--clear','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser trace') {
-                $completions = @('start','stop')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser trace start') {
-                $completions = @('--target-id','--no-screenshots','--no-snapshots','--sources')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser trace stop') {
-                $completions = @('--out','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser cookies') {
-                $completions = @('set','clear','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser cookies set') {
-                $completions = @('--url','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser cookies clear') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage') {
-                $completions = @('local','session')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage local') {
-                $completions = @('get','set','clear')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage local get') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage local set') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage local clear') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage session') {
-                $completions = @('get','set','clear')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage session get') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage session set') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser storage session clear') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set') {
-                $completions = @('viewport','offline','headers','credentials','geo','media','timezone','locale','device')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set viewport') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set offline') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set headers') {
-                $completions = @('--headers-json','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set credentials') {
-                $completions = @('--clear','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set geo') {
-                $completions = @('--clear','--accuracy','--origin','--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set media') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set timezone') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set locale') {
-                $completions = @('--target-id')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'browser set device') {
-                $completions = @('--target-id')
+            if ($commandPath -eq 'tasks flow show') {
+                $completions = @('--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -921,14 +578,14 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'gateway') {
-                $completions = @('run','status','install','uninstall','start','stop','restart','call','usage-cost','health','probe','discover','--port','--bind','--token','--auth','--password','--password-file','--tailscale','--tailscale-reset-on-exit','--allow-unconfigured','--dev','--reset','--force','--verbose','--claude-cli-logs','--ws-log','--compact','--raw-stream','--raw-stream-path')
+                $completions = @('run','status','install','uninstall','start','stop','restart','call','usage-cost','health','probe','discover','--port','--bind','--token','--auth','--password','--password-file','--tailscale','--tailscale-reset-on-exit','--allow-unconfigured','--dev','--reset','--force','--verbose','--cli-backend-logs','--claude-cli-logs','--ws-log','--compact','--raw-stream','--raw-stream-path')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
             }
 
             if ($commandPath -eq 'gateway run') {
-                $completions = @('--port','--bind','--token','--auth','--password','--password-file','--tailscale','--tailscale-reset-on-exit','--allow-unconfigured','--dev','--reset','--force','--verbose','--claude-cli-logs','--ws-log','--compact','--raw-stream','--raw-stream-path')
+                $completions = @('--port','--bind','--token','--auth','--password','--password-file','--tailscale','--tailscale-reset-on-exit','--allow-unconfigured','--dev','--reset','--force','--verbose','--cli-backend-logs','--claude-cli-logs','--ws-log','--compact','--raw-stream','--raw-stream-path')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -1292,7 +949,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'nodes') {
-                $completions = @('status','describe','list','pending','approve','reject','rename','invoke','run','notify','push','canvas','camera','screen','location')
+                $completions = @('status','describe','list','pending','approve','reject','rename','invoke','notify','push','canvas','camera','screen','location')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -1349,13 +1006,6 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
 
             if ($commandPath -eq 'nodes invoke') {
                 $completions = @('--node','--command','--params','--invoke-timeout','--idempotency-key','--url','--token','--timeout','--json')
-                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
-                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
-                }
-            }
-
-            if ($commandPath -eq 'nodes run') {
-                $completions = @('--node','--cwd','--env','--raw','--agent','--ask','--security','--command-timeout','--needs-screen-recording','--invoke-timeout','--url','--token','--timeout','--json')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -1656,7 +1306,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'cron add') {
-                $completions = @('--name','--description','--disabled','--delete-after-run','--keep-after-run','--agent','--session','--session-key','--wake','--at','--every','--cron','--tz','--stagger','--exact','--system-event','--message','--thinking','--model','--timeout-seconds','--light-context','--announce','--deliver','--no-deliver','--channel','--to','--account','--best-effort-deliver','--json','--url','--token','--timeout','--expect-final')
+                $completions = @('--name','--description','--disabled','--delete-after-run','--keep-after-run','--agent','--session','--session-key','--wake','--at','--every','--cron','--tz','--stagger','--exact','--system-event','--message','--thinking','--model','--timeout-seconds','--light-context','--tools','--announce','--deliver','--no-deliver','--channel','--to','--account','--best-effort-deliver','--json','--url','--token','--timeout','--expect-final')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -1698,7 +1348,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'cron edit') {
-                $completions = @('--name','--description','--enable','--disable','--delete-after-run','--keep-after-run','--session','--agent','--clear-agent','--session-key','--clear-session-key','--wake','--at','--every','--cron','--tz','--stagger','--exact','--system-event','--message','--thinking','--model','--timeout-seconds','--light-context','--no-light-context','--announce','--deliver','--no-deliver','--channel','--to','--account','--best-effort-deliver','--no-best-effort-deliver','--failure-alert','--no-failure-alert','--failure-alert-after','--failure-alert-channel','--failure-alert-to','--failure-alert-cooldown','--failure-alert-mode','--failure-alert-account-id','--url','--token','--timeout','--expect-final')
+                $completions = @('--name','--description','--enable','--disable','--delete-after-run','--keep-after-run','--session','--agent','--clear-agent','--session-key','--clear-session-key','--wake','--at','--every','--cron','--tz','--stagger','--exact','--system-event','--message','--thinking','--model','--timeout-seconds','--light-context','--no-light-context','--tools','--clear-tools','--announce','--deliver','--no-deliver','--channel','--to','--account','--best-effort-deliver','--no-best-effort-deliver','--failure-alert','--no-failure-alert','--failure-alert-after','--failure-alert-channel','--failure-alert-to','--failure-alert-cooldown','--failure-alert-mode','--failure-alert-account-id','--url','--token','--timeout','--expect-final')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }
@@ -1809,6 +1459,34 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
                 }
             }
 
+            if ($commandPath -eq 'memory') {
+                $completions = @('status','index','search')
+                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
+                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
+                }
+            }
+
+            if ($commandPath -eq 'memory status') {
+                $completions = @('--agent','--json','--deep','--index','--verbose')
+                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
+                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
+                }
+            }
+
+            if ($commandPath -eq 'memory index') {
+                $completions = @('--agent','--force','--verbose')
+                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
+                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
+                }
+            }
+
+            if ($commandPath -eq 'memory search') {
+                $completions = @('--query','--agent','--max-results','--min-score','--json')
+                $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
+                    [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
+                }
+            }
+
             if ($commandPath -eq 'feishu-diagnose') {
                 $completions = @('--trace','--analyze')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
@@ -1866,7 +1544,7 @@ Register-ArgumentCompleter -Native -CommandName openclaw -ScriptBlock {
             }
 
             if ($commandPath -eq 'plugins install') {
-                $completions = @('-l','--pin','--marketplace')
+                $completions = @('-l','--pin','--dangerously-force-unsafe-install','--marketplace')
                 $completions | Where-Object { $_ -like "$wordToComplete*" } | ForEach-Object {
                     [System.Management.Automation.CompletionResult]::new($_, $_, 'ParameterName', $_)
                 }

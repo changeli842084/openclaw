@@ -1,16 +1,17 @@
 {
   "agent:manager:main": {
     "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
-    "updatedAt": 1775519898467,
+    "updatedAt": 1775523342283,
     "systemSent": true,
     "abortedLastRun": false,
     "chatType": "direct",
     "deliveryContext": {
-      "channel": "webchat"
+      "channel": "webchat",
+      "to": "heartbeat"
     },
     "origin": {
-      "label": "openclaw-tui",
-      "provider": "webchat",
+      "label": "heartbeat",
+      "provider": "heartbeat",
       "from": "heartbeat",
       "to": "heartbeat",
       "surface": "webchat",
@@ -401,7 +402,7 @@
     },
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1775517903366,
+      "generatedAt": 1775523305841,
       "sessionId": "5c5df458-4ab1-4580-847a-9eafb95a6cc4",
       "sessionKey": "agent:manager:main",
       "provider": "quan2go",
@@ -421,9 +422,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 47660,
+        "chars": 47748,
         "projectContextChars": 15195,
-        "nonProjectContextChars": 32465
+        "nonProjectContextChars": 32553
       },
       "injectedWorkspaceFiles": [
         {
@@ -630,7 +631,7 @@
       },
       "tools": {
         "listChars": 11174,
-        "schemaChars": 56995,
+        "schemaChars": 57163,
         "entries": [
           {
             "name": "read",
@@ -671,8 +672,8 @@
           {
             "name": "message",
             "summaryChars": 197,
-            "schemaChars": 5628,
-            "propertiesCount": 104
+            "schemaChars": 5796,
+            "propertiesCount": 105
           },
           {
             "name": "tts",
@@ -1042,13 +1043,16 @@
     "totalTokensFresh": false,
     "modelProvider": "quan2go",
     "model": "gpt-5.4",
-    "status": "running",
-    "startedAt": 1775519898002,
+    "status": "done",
+    "startedAt": 1775523306049,
     "contextTokens": 16000,
     "lastChannel": "webchat",
     "channel": "webchat",
     "memoryFlushAt": 1775517033582,
-    "memoryFlushCompactionCount": 14
+    "memoryFlushCompactionCount": 14,
+    "lastTo": "heartbeat",
+    "endedAt": 1775523342028,
+    "runtimeMs": 35979
   },
   "agent:manager:manager": {
     "sessionId": "9175928e-6a22-42f5-b16b-b14d1319b6de",

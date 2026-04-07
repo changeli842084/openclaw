@@ -21,3 +21,17 @@
 - Source: simplify-and-harden
 - Pattern-Key: diagnose-report-facts-before-deep-dive
 - **See Also**: `long-running-task-must-send-progress-update`
+
+## 2026-04-07 | correction | 硬件诊断也必须阶段性回报，不能只做首轮探测
+- 用户反馈：`你又卡住114分钟了`
+- 问题：在 USB 无线网卡排查中，只完成了首轮只读探测，没有及时把“已识别设备 / 尚未确认驱动绑定”的阶段结果回报给用户。
+- 正确认知：硬件/系统诊断同样属于长任务；即使还没拿到最终根因，也必须先同步当前已确认事实和下一步判断点。
+- 以后做法：
+  1. 首轮探测完成后立即回报：设备是否被识别、驱动是否加载、接口是否出现。
+  2. 若需要进一步查看日志/驱动支持，先告诉用户目前最可能的方向。
+  3. 心跳期间若存在这类未结项诊断，恢复正常对话后优先补发正式结论。
+- 分类：correction
+- 触发来源：用户直接纠正
+- Source: simplify-and-harden
+- Pattern-Key: hardware-diagnosis-must-report-intermediate-findings
+- **See Also**: `long-running-task-must-send-progress-update`

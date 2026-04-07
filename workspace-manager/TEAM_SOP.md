@@ -3,6 +3,17 @@
 ## 1. 适用范围
 适用于 manager / researcher / coder / office 参与的多 Agent 协作任务，目标是减少规则漂移、状态漂移和交付闭环不清的问题。
 
+## 1.1 文档优先级说明
+当 `AGENTS.md`、`SOUL.md`、`HEARTBEAT.md`、`TEAM_SOP.md` 存在重叠时，按以下原则解释：
+- `SOUL.md`：定义行为原则、红线与总体风格
+- `AGENTS.md`：定义任务流程、分工与执行方法
+- `HEARTBEAT.md`：定义心跳巡查规则；在心跳场景下优先级最高
+- `TEAM_SOP.md`：定义多 Agent 协作标准流程、模板与复盘方法
+- 若出现冲突：
+  1. 心跳场景以 `HEARTBEAT.md` 为准
+  2. 日常任务执行以 `SOUL.md` + `AGENTS.md` 为准
+  3. 多 Agent 协作细节以 `TEAM_SOP.md` 作为补充说明
+
 ## 2. 角色分工
 
 ### manager
